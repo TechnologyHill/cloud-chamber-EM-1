@@ -1,6 +1,4 @@
-include <../../parameters.scad>
-
-module L_2015_profile(width, height, thickness=2, size=100) {
+module L_profile(width, height, thickness=2, size=100) {
     difference() {
         cube([width, height, size]);
 

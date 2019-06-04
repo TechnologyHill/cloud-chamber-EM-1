@@ -2,9 +2,17 @@
 
 
 
-//peltier cells
+//peltiers
 peltier_size = 40;
 peltier_thickness = 2.9;
+
+//water ALU block
+water_block_size = 40;
+water_block_thickness = 10;
+
+//hose
+hose_outer_diameter = 10;
+hose_inner_diameter = 8;
 
 ////ALU profiles
 
