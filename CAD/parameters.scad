@@ -12,3 +12,8 @@ peltier_thickness = 2.9;
 L_2015_width = 20;
 L_2015_height = 15;
 L_2015_thickness = 2;
+
+//T_profile 2020
+T_2020_width = 20;
+T_2020_height = 20;
+T_2020_thickness = 2;

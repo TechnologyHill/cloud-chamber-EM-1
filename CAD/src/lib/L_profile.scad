@@ -1,12 +1,12 @@
 include <../../parameters.scad>
 
-module L_2015_profile(height=100) {
+module L_2015_profile(width, height, thickness=2, size=100) {
     difference() {
-        cube([L_2015_width, L_2015_height, height]);
+        cube([width, height, size]);
 
-        translate([L_2015_thickness, L_2015_thickness, -0.1])
-            cube([L_2015_width, L_2015_height, height+0.2]);
+        translate([thickness, thickness, -0.1])
+            cube([width, height, size+0.2]);
     }
 }
 
-L_2015_profile(150);
+L_2015_profile(15, 20);
