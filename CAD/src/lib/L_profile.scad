@@ -7,4 +7,4 @@ module L_profile(width, height, thickness=2, size=100) {
     }
 }
 
-L_2015_profile(15, 20);
+L_profile(15, 20);
