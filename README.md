@@ -2,7 +2,7 @@
 
 ### Our goal is make a small cloud chamber based on thermoelectric cooling.
 
-#### [Shopping list] (https://docs.google.com/spreadsheets/d/14hCsTsorVP4mwYcDdZ4Uk--QDRCdFsPFW2lGzlMLsTE/edit?usp=sharing)
+#### [Shopping list](https://docs.google.com/spreadsheets/d/14hCsTsorVP4mwYcDdZ4Uk--QDRCdFsPFW2lGzlMLsTE/edit?usp=sharing)
 
 ## Cooling system
 ![Image](documents/inkscape_schema.svg "Cooling system")
