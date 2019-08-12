@@ -1,8 +1,7 @@
 # Cloud Chamber EM-1
 
 ### Our goal is make a small cloud chamber based on thermoelectric cooling.
-
-#### [Shopping list](https://docs.google.com/spreadsheets/d/14hCsTsorVP4mwYcDdZ4Uk--QDRCdFsPFW2lGzlMLsTE/edit?usp=sharing)
+### expected viewport size is 100 mm x 180 mm
 
 ![image](documents/schema.png "Cloud Chamber visualization")
 

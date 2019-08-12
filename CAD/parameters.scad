@@ -17,7 +17,7 @@ hose_outer_diameter = 10;
 hose_inner_diameter = 8;
 
 
-////ALU profiles
+//========== ALU PROFILES ==========//
 
 //L_profile 2015
 L_2015_width = 20;
@@ -30,7 +30,7 @@ T_2020_height = 20;
 T_2020_thickness = 2;
 
 
-////Screws
+//========== SCREWS ==========//
 
 //Screw diameter and nut for M10 [mm]
 M10_screw_diameter=10.4;
@@ -40,7 +40,7 @@ M10_nut_height = 10.5;
 M10_nut_diameter = 25.5;
 M10_nut_pocket = 22.3;
 
-//Screw diameter for M8 [mm]
+//Screw diameter and nut for M8 [mm]
 M8_screw_diameter = 8 + 1;
 M8_head_height = 8;
 M8_head_diameter = 13.5;

@@ -12,9 +12,6 @@ IMAGES=$(patsubst $(SRC_DIR)/%.scad, $(IMG_DIR)/%.png, $(SOURCES))
 
 all: default images
 
-calibration:
-	openscad -m make -o calibration.stl calibration.scad
-
 default: $(TARGETS)
 
 $(STL_DIR)/%.stl: $(SRC_DIR)/%.scad
@@ -30,6 +27,5 @@ arrange: default
 	 $(SIMARRANGE) -x $(PLATE_DIMMENSIONS) -y $(PLATE_DIMMENSIONS) $(ARRANGE_TARGETS)
 	 
 clean:
-	rm -f calibration.stl
 	rm -f $(STL_DIR)/*.stl
 	rm -f $(IMG_DIR)/*.png
