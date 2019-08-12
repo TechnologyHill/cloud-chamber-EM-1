@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="700"
-   height="350"
-   viewBox="0 0 185.20834 92.60422"
+   width="734.45264"
+   height="418.74564"
+   viewBox="0 0 194.32393 110.79318"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
@@ -29,10 +29,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="253.90427"
-     inkscape:cy="133.07565"
+     inkscape:cx="263.09282"
+     inkscape:cy="145.77415"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer11"
+     inkscape:current-layer="layer13"
      showgrid="false"
      inkscape:measure-start="0,0"
      inkscape:measure-end="0,0"
@@ -64,13 +64,14 @@
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="podlozi"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)"
+     style="display:inline">
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.15728557;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.98317403;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect1238"
-       width="192.43405"
-       height="155.01633"
-       x="8.5526247"
+       width="194.32393"
+       height="110.79311"
+       x="6.6627436"
        y="4.6071367" />
   </g>
   <g
@@ -78,7 +79,7 @@
      id="layer11"
      inkscape:label="hadice"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <path
        style="fill:none;stroke:#ff0000;stroke-width:1.32299995;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        d="M 86.178571,29.770832 H 68.602677 v 24.190477 h 17.386906"
@@ -118,7 +119,7 @@
      id="layer5"
      inkscape:label="pumpa"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <g
        inkscape:groupmode="layer"
        id="layer6"
@@ -173,7 +174,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <g
        inkscape:groupmode="layer"
        id="layer2"
@@ -333,7 +334,7 @@
      id="layer8"
      inkscape:label="blok"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <g
        id="g1039"
        transform="rotate(180,59.917959,159.23502)">
@@ -365,7 +366,7 @@
      id="layer9"
      inkscape:label="kohoutek"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <g
        id="g1064"
        transform="translate(-83.222875,29.273765)">
@@ -399,7 +400,7 @@
      id="layer10"
      inkscape:label="odbocka"
      style="display:inline"
-     transform="translate(-9.0938793,-19.436272)">
+     transform="translate(-6.6627436,-4.6071367)">
     <g
        id="g1078"
        transform="rotate(-180,27.068828,186.64028)">
@@ -423,7 +424,7 @@
      inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="text"
-     transform="translate(-9.0938793,-19.436272)"
+     transform="translate(-6.6627436,-4.6071367)"
      style="display:inline">
     <g
        aria-label="Radiator"
