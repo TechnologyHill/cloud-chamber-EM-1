@@ -1,4 +1,6 @@
-//configuration file for our cloud chamber
+//============================================//
+//                CLOUD CHAMBER               //
+//============================================//
 
 observation_surface_x = 180;
 observation_surface_y = 100;
@@ -9,7 +11,8 @@ peltier_size_y = 40;
 peltier_thickness = 2.9;
 
 //water ALU block
-water_block_size = 40;
+water_block_width = 40;
+water_block_length = 120;
 water_block_thickness = 10;
 
 //hose
