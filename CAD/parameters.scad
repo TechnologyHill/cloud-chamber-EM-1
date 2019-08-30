@@ -9,6 +9,7 @@ observation_surface_y = 100;
 peltier_size_x = 40;
 peltier_size_y = 40;
 peltier_thickness = 2.9;
+peltier_cable_diameter = 4;
 
 //water ALU block
 water_block_width = 40;
