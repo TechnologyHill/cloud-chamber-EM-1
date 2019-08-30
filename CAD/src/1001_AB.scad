@@ -1,6 +1,6 @@
 include <../parameters.scad>
 
-bottom_thickness = 5;
+bottom_thickness = 3;
 border_thickness = 2;
 border_height = water_block_thickness+peltier_thickness*2+2;
 border_corner_size = 10;

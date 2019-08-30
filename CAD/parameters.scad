@@ -14,7 +14,7 @@ peltier_cable_diameter = 4;
 //water ALU block
 water_block_width = 40;
 water_block_length = 120;
-water_block_thickness = 10;
+water_block_thickness = 12.5;
 
 //hose
 hose_outer_diameter = 10;
