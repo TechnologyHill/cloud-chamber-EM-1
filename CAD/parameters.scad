@@ -24,9 +24,9 @@ hose_inner_diameter = 8;
 //========== ALU PROFILES ==========//
 
 //L_profile 2015
-L_2015_width = 20;
-L_2015_height = 15;
-L_2015_thickness = 2;
+L_2015_width = 20.2;
+L_2015_height = 15.2;
+L_2015_thickness = 2.2;
 
 //T_profile 2020
 T_2020_width = 20;
