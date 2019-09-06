@@ -2,6 +2,10 @@
 //                CLOUD CHAMBER               //
 //============================================//
 
+
+//========== COMPONENTS ==========//
+
+//observation_surface_x
 observation_surface_x = 180;
 observation_surface_y = 100;
 
