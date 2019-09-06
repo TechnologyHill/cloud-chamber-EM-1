@@ -20,6 +20,14 @@ water_block_thickness = 12.5;
 hose_outer_diameter = 10;
 hose_inner_diameter = 8;
 
+//nextion display 2.8"
+nextion_board_width = 0;
+nextion_board_height = 0;
+nextion_board_thickness = 0;
+nextion_display_width = 0;
+nextion_display_height = 0;
+nextion_thickness = 0;
+
 
 //========== ALU PROFILES ==========//
 
