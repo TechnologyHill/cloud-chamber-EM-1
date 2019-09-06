@@ -2,7 +2,7 @@
 
 We create 3D models in [OpenSCAD](https://www.openscad.org).
 
-To render .stl files you must install *stlsort*
+To render *.stl* files you must install *stlsort*
 
 ```sudo pip install stlsort```
 
