@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -249,8 +248,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 2000 4750 2850
 Wire Wire Line
-	4750 2850 4650 2850
-Wire Wire Line
 	4400 2100 4400 2000
 Connection ~ 4400 2000
 Wire Wire Line
@@ -273,52 +270,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    3050 5900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5D71EC3A
-P 4100 3200
-F 0 "J3" H 4018 2875 50  0001 C CNN
-F 1 "DS18B20" H 4018 2967 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 4100 3200 50  0001 C CNN
-F 3 "~" H 4100 3200 50  0001 C CNN
-	1    4100 3200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5D721FD8
-P 4300 3250
-F 0 "#PWR0107" H 4300 3000 50  0001 C CNN
-F 1 "GND" H 4305 3077 50  0000 C CNN
-F 2 "" H 4300 3250 50  0001 C CNN
-F 3 "" H 4300 3250 50  0001 C CNN
-	1    4300 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 3200 4300 3250
-Wire Wire Line
-	4500 3100 4300 3100
-$Comp
-L Device:R R1
-U 1 1 5D724DEC
-P 4650 3100
-F 0 "R1" H 4720 3146 50  0001 L CNN
-F 1 "4K7" H 4720 3100 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4580 3100 50  0001 C CNN
-F 3 "~" H 4650 3100 50  0001 C CNN
-	1    4650 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 2950 4650 2850
-Connection ~ 4650 2850
-Wire Wire Line
-	4650 3250 4650 3400
-Wire Wire Line
-	4650 3400 4500 3400
-Wire Wire Line
-	4500 3400 4500 3100
 $Comp
 L Regulator_Linear:L7805 U4
 U 1 1 5D742D1A
@@ -380,7 +331,7 @@ Wire Wire Line
 	5150 1900 5150 1700
 Connection ~ 5150 1700
 Wire Wire Line
-	5150 1700 3400 1700
+	5150 1700 4850 1700
 Wire Wire Line
 	6050 1900 6050 1700
 Wire Wire Line
@@ -408,8 +359,6 @@ Wire Wire Line
 	3900 3800 3900 2850
 Connection ~ 3900 2850
 Wire Wire Line
-	3900 2850 4650 2850
-Wire Wire Line
 	3300 3350 3300 4350
 Wire Wire Line
 	3300 4350 3900 4350
@@ -425,11 +374,6 @@ Wire Wire Line
 	4000 4250 4000 5000
 Wire Wire Line
 	4000 5000 3650 5000
-Wire Wire Line
-	3650 5200 4500 5200
-Wire Wire Line
-	4500 5200 4500 3400
-Connection ~ 4500 3400
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5D76CC86
@@ -521,4 +465,159 @@ Wire Wire Line
 	5800 3900 5900 3900
 Wire Wire Line
 	5900 3900 5900 4100
+Wire Wire Line
+	3900 2850 4750 2850
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5D733E64
+P 4550 3050
+F 0 "J?" V 4514 2862 50  0001 R CNN
+F 1 "DS18B20" V 4468 2862 50  0000 R CNN
+F 2 "" H 4550 3050 50  0001 C CNN
+F 3 "~" H 4550 3050 50  0001 C CNN
+	1    4550 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3650 5200 4550 5200
+Wire Wire Line
+	4650 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 2850
+Connection ~ 4750 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5D73A841
+P 4350 3400
+F 0 "#PWR?" H 4350 3150 50  0001 C CNN
+F 1 "GND" H 4355 3227 50  0000 C CNN
+F 2 "" H 4350 3400 50  0001 C CNN
+F 3 "" H 4350 3400 50  0001 C CNN
+	1    4350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3250 4350 3250
+Wire Wire Line
+	4350 3250 4350 3400
+Wire Wire Line
+	1800 1850 1800 1900
+Wire Wire Line
+	1800 1900 1900 1900
+Connection ~ 1900 1900
+Wire Wire Line
+	4550 3250 4550 5200
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D75939C
+P 5550 4550
+F 0 "J?" H 5630 4542 50  0001 L CNN
+F 1 "4pin FAN" H 5630 4496 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 5550 4550 50  0001 C CNN
+F 3 "~" H 5550 4550 50  0001 C CNN
+	1    5550 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D75AEB3
+P 5550 5050
+F 0 "J?" H 5630 5042 50  0001 L CNN
+F 1 "4pin FAN" H 5630 4996 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 5550 5050 50  0001 C CNN
+F 3 "~" H 5550 5050 50  0001 C CNN
+	1    5550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D75B498
+P 5550 5550
+F 0 "J?" H 5630 5542 50  0001 L CNN
+F 1 "4pin FAN" H 5630 5496 50  0000 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 5550 5550 50  0001 C CNN
+F 3 "~" H 5550 5550 50  0001 C CNN
+	1    5550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D75BBF3
+P 5200 4350
+F 0 "#PWR?" H 5200 4100 50  0001 C CNN
+F 1 "GND" H 5205 4177 50  0000 C CNN
+F 2 "" H 5200 4350 50  0001 C CNN
+F 3 "" H 5200 4350 50  0001 C CNN
+	1    5200 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D75C551
+P 5200 4850
+F 0 "#PWR?" H 5200 4600 50  0001 C CNN
+F 1 "GND" H 5205 4677 50  0000 C CNN
+F 2 "" H 5200 4850 50  0001 C CNN
+F 3 "" H 5200 4850 50  0001 C CNN
+	1    5200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D75CAEA
+P 5200 5350
+F 0 "#PWR?" H 5200 5100 50  0001 C CNN
+F 1 "GND" H 5205 5177 50  0000 C CNN
+F 2 "" H 5200 5350 50  0001 C CNN
+F 3 "" H 5200 5350 50  0001 C CNN
+	1    5200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4450 5350 4350
+Wire Wire Line
+	5350 4350 5200 4350
+Wire Wire Line
+	5350 4950 5350 4850
+Wire Wire Line
+	5350 4850 5200 4850
+Wire Wire Line
+	5350 5450 5350 5350
+Wire Wire Line
+	5350 5350 5200 5350
+Wire Wire Line
+	5350 5550 4850 5550
+Wire Wire Line
+	4850 5550 4850 5050
+Connection ~ 4850 1700
+Wire Wire Line
+	4850 1700 3400 1700
+Wire Wire Line
+	5350 5050 4850 5050
+Connection ~ 4850 5050
+Wire Wire Line
+	4850 5050 4850 4550
+Wire Wire Line
+	5350 4550 4850 4550
+Connection ~ 4850 4550
+Wire Wire Line
+	4850 4550 4850 1700
+Wire Wire Line
+	3650 5300 4650 5300
+Wire Wire Line
+	4650 5300 4650 4750
+Wire Wire Line
+	4650 4750 5350 4750
+Wire Wire Line
+	3650 5400 4750 5400
+Wire Wire Line
+	4750 5400 4750 5250
+Wire Wire Line
+	4750 5250 5350 5250
+Wire Wire Line
+	3650 5500 4750 5500
+Wire Wire Line
+	4750 5500 4750 5750
+Wire Wire Line
+	4750 5750 5350 5750
 $EndSCHEMATC
