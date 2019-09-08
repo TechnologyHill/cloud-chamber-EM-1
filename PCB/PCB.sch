@@ -406,18 +406,6 @@ Wire Wire Line
 	6250 1700 6050 1700
 Connection ~ 6050 1700
 Wire Wire Line
-	2450 6100 2050 6100
-Wire Wire Line
-	2050 6100 2050 4150
-Wire Wire Line
-	2050 4150 5350 4150
-Wire Wire Line
-	2450 6200 1950 6200
-Wire Wire Line
-	1950 6200 1950 4050
-Wire Wire Line
-	1950 4050 5250 4050
-Wire Wire Line
 	5250 4050 5250 3250
 $Comp
 L Device:R R2
@@ -620,4 +608,16 @@ Wire Wire Line
 	4750 5500 4750 5750
 Wire Wire Line
 	4750 5750 5350 5750
+Wire Wire Line
+	5350 4150 4300 4150
+Wire Wire Line
+	4300 4150 4300 5700
+Wire Wire Line
+	4300 5700 3650 5700
+Wire Wire Line
+	5250 4050 4400 4050
+Wire Wire Line
+	4400 4050 4400 5800
+Wire Wire Line
+	4400 5800 3650 5800
 $EndSCHEMATC
