@@ -25,12 +25,15 @@ hose_outer_diameter = 10;
 hose_inner_diameter = 8;
 
 //nextion display 2.8"
-nextion_board_width = 0;
-nextion_board_height = 0;
-nextion_board_thickness = 0;
-nextion_display_width = 0;
-nextion_display_height = 0;
-nextion_thickness = 0;
+nextion_board_width = 85;
+nextion_board_height = 50;
+nextion_board_thickness = 1.6;
+nextion_display_width = 69.5;
+nextion_display_height = 50;
+nextion_thickness = 7;
+nextion_screw_diameter = M2_5_nut_diameter;
+nextion_screw_width_distance = 78.5;
+nextion_screw_height_distance = 49;
 
 
 //========== ALU PROFILES ==========//
