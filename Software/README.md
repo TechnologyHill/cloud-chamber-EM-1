@@ -1,0 +1,1 @@
+# All software is coded in [*MicroPython*](https://micropython.org).
