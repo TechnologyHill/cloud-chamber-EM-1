@@ -591,7 +591,7 @@ U 1 1 5D7806AA
 P 9950 1750
 F 0 "J8" H 10030 1742 50  0001 L CNN
 F 1 "Peltiers 12V" H 10030 1696 50  0000 L CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBVA_2,5_4-G-7,62_1x04_P7.62mm_Vertical" H 9950 1750 50  0001 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-104_1x04_P5.00mm_45Degree" H 9950 1750 50  0001 C CNN
 F 3 "~" H 9950 1750 50  0001 C CNN
 	1    9950 1750
 	1    0    0    -1  
@@ -688,84 +688,12 @@ Wire Wire Line
 Wire Wire Line
 	9750 4050 9350 4050
 $Comp
-L Transistor_FET:IRF540N Q15
-U 1 1 5D829D0E
-P 9250 4950
-F 0 "Q15" H 9456 4996 50  0001 L CNN
-F 1 "IRF530N" H 9456 4950 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9500 4875 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 9250 4950 50  0001 L CNN
-	1    9250 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 5D82ADFF
-P 9950 4700
-F 0 "J11" H 10030 4692 50  0001 L CNN
-F 1 "chamber LED" H 10030 4646 50  0000 L CNN
-F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_804-102_1x02_P5.00mm_45Degree" H 9950 4700 50  0001 C CNN
-F 3 "~" H 9950 4700 50  0001 C CNN
-	1    9950 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 4700 9350 4700
-Wire Wire Line
-	9350 4700 9350 4750
-$Comp
-L power:GND #PWR0111
-U 1 1 5D831A0E
-P 9600 5300
-F 0 "#PWR0111" H 9600 5050 50  0001 C CNN
-F 1 "GND" H 9605 5127 50  0000 C CNN
-F 2 "" H 9600 5300 50  0001 C CNN
-F 3 "" H 9600 5300 50  0001 C CNN
-	1    9600 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9350 5150 9600 5150
-Wire Wire Line
-	9600 5150 9600 5300
-Wire Wire Line
-	9750 4800 9600 4800
-Wire Wire Line
-	9600 4800 9600 5150
-Connection ~ 9600 5150
-$Comp
-L Device:R R7
-U 1 1 5D862071
-P 9050 5150
-F 0 "R7" H 9120 5196 50  0001 L CNN
-F 1 "5k6" H 9120 5150 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8980 5150 50  0001 C CNN
-F 3 "~" H 9050 5150 50  0001 C CNN
-	1    9050 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0115
-U 1 1 5D862529
-P 9050 5350
-F 0 "#PWR0115" H 9050 5100 50  0001 C CNN
-F 1 "GND" H 9055 5177 50  0000 C CNN
-F 2 "" H 9050 5350 50  0001 C CNN
-F 3 "" H 9050 5350 50  0001 C CNN
-	1    9050 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5300 9050 5350
-Wire Wire Line
-	9050 4950 9050 5000
-$Comp
 L Device:R R6
 U 1 1 5D8969EA
 P 8850 4400
 F 0 "R6" H 8920 4446 50  0001 L CNN
 F 1 "5k6" H 8920 4400 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 4400 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 4400 50  0001 C CNN
 F 3 "~" H 8850 4400 50  0001 C CNN
 	1    8850 4400
 	1    0    0    -1  
@@ -789,7 +717,7 @@ U 1 1 5D89AEBA
 P 8850 3900
 F 0 "R5" H 8920 3946 50  0001 L CNN
 F 1 "5k6" H 8920 3900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 3900 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 3900 50  0001 C CNN
 F 3 "~" H 8850 3900 50  0001 C CNN
 	1    8850 3900
 	1    0    0    -1  
@@ -813,7 +741,7 @@ U 1 1 5D89FA9C
 P 8850 3300
 F 0 "R4" H 8920 3346 50  0001 L CNN
 F 1 "5k6" H 8920 3300 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 3300 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 3300 50  0001 C CNN
 F 3 "~" H 8850 3300 50  0001 C CNN
 	1    8850 3300
 	1    0    0    -1  
@@ -837,7 +765,7 @@ U 1 1 5D8A46CB
 P 8850 2800
 F 0 "R3" H 8920 2846 50  0001 L CNN
 F 1 "5k6" H 8920 2800 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 2800 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 2800 50  0001 C CNN
 F 3 "~" H 8850 2800 50  0001 C CNN
 	1    8850 2800
 	1    0    0    -1  
@@ -861,7 +789,7 @@ U 1 1 5D8AA18F
 P 8850 2200
 F 0 "R2" H 8920 2246 50  0001 L CNN
 F 1 "5k6" H 8920 2200 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 2200 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 2200 50  0001 C CNN
 F 3 "~" H 8850 2200 50  0001 C CNN
 	1    8850 2200
 	1    0    0    -1  
@@ -885,7 +813,7 @@ U 1 1 5D8B0282
 P 8850 1700
 F 0 "R1" H 8920 1746 50  0001 L CNN
 F 1 "5k6" H 8920 1700 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8780 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 1700 50  0001 C CNN
 F 3 "~" H 8850 1700 50  0001 C CNN
 	1    8850 1700
 	1    0    0    -1  
@@ -915,86 +843,6 @@ Wire Wire Line
 	9050 3750 8850 3750
 Wire Wire Line
 	9050 4250 8850 4250
-$Comp
-L Transistor_FET:IRF40DM229 Q8
-U 1 1 5D8F51CF
-P 8150 1350
-F 0 "Q8" H 8356 1396 50  0001 L CNN
-F 1 "IRFD110" H 8356 1350 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 1350 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 1350 50  0001 L CNN
-	1    8150 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q9
-U 1 1 5D9078A7
-P 8150 1850
-F 0 "Q9" H 8356 1896 50  0001 L CNN
-F 1 "IRFD110" H 8356 1850 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 1850 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 1850 50  0001 L CNN
-	1    8150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q10
-U 1 1 5D90E6B2
-P 8150 2450
-F 0 "Q10" H 8356 2496 50  0001 L CNN
-F 1 "IRFD110" H 8356 2450 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 2450 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 2450 50  0001 L CNN
-	1    8150 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q11
-U 1 1 5D91973B
-P 8150 2950
-F 0 "Q11" H 8356 2996 50  0001 L CNN
-F 1 "IRFD110" H 8356 2950 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 2950 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 2950 50  0001 L CNN
-	1    8150 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q12
-U 1 1 5D920750
-P 8150 3550
-F 0 "Q12" H 8356 3596 50  0001 L CNN
-F 1 "IRFD110" H 8356 3550 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 3550 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 3550 50  0001 L CNN
-	1    8150 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q13
-U 1 1 5D92C76B
-P 8150 4050
-F 0 "Q13" H 8356 4096 50  0001 L CNN
-F 1 "IRFD110" H 8356 4050 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 4050 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 4050 50  0001 L CNN
-	1    8150 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q14
-U 1 1 5D936176
-P 8150 4750
-F 0 "Q14" H 8356 4796 50  0001 L CNN
-F 1 "IRFD110" H 8356 4750 50  0000 L CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 8150 4750 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 8150 4750 50  0001 L CNN
-	1    8150 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 4950 8250 4950
-Connection ~ 9050 4950
 Wire Wire Line
 	8850 4250 8250 4250
 Connection ~ 8850 4250
@@ -1013,8 +861,6 @@ Connection ~ 8850 2050
 Wire Wire Line
 	8850 1550 8250 1550
 Connection ~ 8850 1550
-Wire Wire Line
-	8250 4550 7400 4550
 Wire Wire Line
 	8250 1150 7400 1150
 Wire Wire Line
@@ -1042,8 +888,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 3350 7400 3850
 Connection ~ 7400 3850
-Wire Wire Line
-	7400 3850 7400 4550
 Wire Wire Line
 	3650 6100 6450 6100
 Wire Wire Line
@@ -1079,27 +923,6 @@ Wire Wire Line
 Wire Wire Line
 	6950 4050 7950 4050
 Wire Wire Line
-	3650 6300 4500 6300
-Wire Wire Line
-	4500 6300 4500 6500
-Wire Wire Line
-	4500 6500 7050 6500
-Wire Wire Line
-	7050 6500 7050 4750
-Wire Wire Line
-	7050 4750 7950 4750
-$Comp
-L Transistor_FET:IRF40DM229 Q7
-U 1 1 5DA17650
-P 6800 950
-F 0 "Q7" H 7006 996 50  0001 L CNN
-F 1 "IRFD110" V 7051 950 50  0000 C CNN
-F 2 "Package_DIP:Vishay_HVM-DIP-3_W7.62mm" H 6800 950 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 6800 950 50  0001 L CNN
-	1    6800 950 
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	4850 850  6600 850 
 Wire Wire Line
 	4850 850  4850 1700
@@ -1122,7 +945,7 @@ U 1 1 5D80F533
 P 9950 2850
 F 0 "J9" H 10030 2842 50  0001 L CNN
 F 1 "Peltiers 3.3V" H 10030 2796 50  0000 L CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBVA_2,5_4-G-7,62_1x04_P7.62mm_Vertical" H 9950 2850 50  0001 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-104_1x04_P5.00mm_45Degree" H 9950 2850 50  0001 C CNN
 F 3 "~" H 9950 2850 50  0001 C CNN
 	1    9950 2850
 	1    0    0    -1  
@@ -1133,7 +956,7 @@ U 1 1 5D80FF7E
 P 9950 3950
 F 0 "J10" H 10030 3942 50  0001 L CNN
 F 1 "Vapor maker" H 10030 3896 50  0000 L CNN
-F 2 "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBVA_2,5_4-G-7,62_1x04_P7.62mm_Vertical" H 9950 3950 50  0001 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-104_1x04_P5.00mm_45Degree" H 9950 3950 50  0001 C CNN
 F 3 "~" H 9950 3950 50  0001 C CNN
 	1    9950 3950
 	1    0    0    -1  
@@ -1144,4 +967,364 @@ Wire Wire Line
 	3650 6000 6750 6000
 Wire Wire Line
 	3650 5900 6650 5900
+$Comp
+L Transistor_FET:ZXMN2A01F Q7
+U 1 1 5D83D569
+P 6800 950
+F 0 "Q7" H 7006 996 50  0001 L CNN
+F 1 "TSM2302" V 7051 950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7000 875 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 6800 950 50  0001 L CNN
+	1    6800 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q8
+U 1 1 5D8707B1
+P 8150 1350
+F 0 "Q8" H 8356 1396 50  0001 L CNN
+F 1 "TSM2302" H 8356 1350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 1275 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 1350 50  0001 L CNN
+	1    8150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q9
+U 1 1 5D872804
+P 8150 1850
+F 0 "Q9" H 8356 1896 50  0001 L CNN
+F 1 "TSM2302" H 8356 1850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 1775 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 1850 50  0001 L CNN
+	1    8150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q10
+U 1 1 5D873F9A
+P 8150 2450
+F 0 "Q10" H 8356 2496 50  0001 L CNN
+F 1 "TSM2302" H 8356 2450 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 2375 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 2450 50  0001 L CNN
+	1    8150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q11
+U 1 1 5D8759BF
+P 8150 2950
+F 0 "Q11" H 8356 2996 50  0001 L CNN
+F 1 "TSM2302" H 8356 2950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 2875 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 2950 50  0001 L CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q12
+U 1 1 5D876EA1
+P 8150 3550
+F 0 "Q12" H 8356 3596 50  0001 L CNN
+F 1 "TSM2302" H 8356 3550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 3475 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 3550 50  0001 L CNN
+	1    8150 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q13
+U 1 1 5D87DF39
+P 8150 4050
+F 0 "Q13" H 8356 4096 50  0001 L CNN
+F 1 "TSM2302" H 8356 4050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 3975 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 4050 50  0001 L CNN
+	1    8150 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J12
+U 1 1 5D88F6B0
+P 5800 3400
+F 0 "J12" V 5764 3112 50  0001 R CNN
+F 1 "I2C" V 5718 3112 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5800 3400 50  0001 C CNN
+F 3 "~" H 5800 3400 50  0001 C CNN
+	1    5800 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5D891800
+P 5750 3950
+F 0 "#PWR0122" H 5750 3700 50  0001 C CNN
+F 1 "GND" H 5755 3777 50  0000 C CNN
+F 2 "" H 5750 3950 50  0001 C CNN
+F 3 "" H 5750 3950 50  0001 C CNN
+	1    5750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3950 5750 3750
+Wire Wire Line
+	5750 3750 5800 3750
+Wire Wire Line
+	5800 3750 5800 3600
+Wire Wire Line
+	3900 3800 5700 3800
+Wire Wire Line
+	5700 3800 5700 3600
+Connection ~ 3900 3800
+Wire Wire Line
+	5900 3600 5900 6800
+Wire Wire Line
+	5900 6800 3650 6800
+Wire Wire Line
+	3650 6900 6000 6900
+Wire Wire Line
+	6000 6900 6000 3600
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5D96FB0D
+P 1950 4150
+F 0 "H3" H 2050 4199 50  0001 L CNN
+F 1 "MountingHole_Pad" H 2050 4108 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1950 4150 50  0001 C CNN
+F 3 "~" H 1950 4150 50  0001 C CNN
+	1    1950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5D96FF4F
+P 1950 4350
+F 0 "#PWR0111" H 1950 4100 50  0001 C CNN
+F 1 "GND" H 1955 4177 50  0000 C CNN
+F 2 "" H 1950 4350 50  0001 C CNN
+F 3 "" H 1950 4350 50  0001 C CNN
+	1    1950 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4350 1950 4250
+$Comp
+L Transistor_FET:IRF540N Q17
+U 1 1 5DA44490
+P 9250 5350
+F 0 "Q17" H 9456 5396 50  0001 L CNN
+F 1 "IRF530N" H 9456 5350 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9500 5275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 9250 5350 50  0001 L CNN
+	1    9250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4950 9750 4650
+Wire Wire Line
+	9750 4650 9350 4650
+Wire Wire Line
+	9350 5050 9750 5050
+Wire Wire Line
+	9750 5250 9750 5550
+Wire Wire Line
+	9750 5550 9350 5550
+Wire Wire Line
+	9750 5150 9350 5150
+$Comp
+L Device:R R8
+U 1 1 5DA444A0
+P 8850 5500
+F 0 "R8" H 8920 5546 50  0001 L CNN
+F 1 "5k6" H 8920 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 5500 50  0001 C CNN
+F 3 "~" H 8850 5500 50  0001 C CNN
+	1    8850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5DA444AA
+P 8850 5700
+F 0 "#PWR0115" H 8850 5450 50  0001 C CNN
+F 1 "GND" H 8855 5527 50  0000 C CNN
+F 2 "" H 8850 5700 50  0001 C CNN
+F 3 "" H 8850 5700 50  0001 C CNN
+	1    8850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5650 8850 5700
+$Comp
+L Device:R R7
+U 1 1 5DA444B5
+P 8850 5000
+F 0 "R7" H 8920 5046 50  0001 L CNN
+F 1 "5k6" H 8920 5000 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8780 5000 50  0001 C CNN
+F 3 "~" H 8850 5000 50  0001 C CNN
+	1    8850 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5DA444BF
+P 8850 5200
+F 0 "#PWR0123" H 8850 4950 50  0001 C CNN
+F 1 "GND" H 8855 5027 50  0000 C CNN
+F 2 "" H 8850 5200 50  0001 C CNN
+F 3 "" H 8850 5200 50  0001 C CNN
+	1    8850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5150 8850 5200
+Wire Wire Line
+	9050 4850 8850 4850
+Wire Wire Line
+	9050 5350 8850 5350
+Wire Wire Line
+	8850 5350 8250 5350
+Connection ~ 8850 5350
+Wire Wire Line
+	8850 4850 8250 4850
+Connection ~ 8850 4850
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 5DA444E6
+P 9950 5050
+F 0 "J11" H 10030 5042 50  0001 L CNN
+F 1 "LED + Pump" H 10030 4996 50  0000 L CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-104_1x04_P5.00mm_45Degree" H 9950 5050 50  0001 C CNN
+F 3 "~" H 9950 5050 50  0001 C CNN
+	1    9950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q14
+U 1 1 5DA444F0
+P 8150 4650
+F 0 "Q14" H 8356 4696 50  0001 L CNN
+F 1 "TSM2302" H 8356 4650 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 4575 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 4650 50  0001 L CNN
+	1    8150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:ZXMN2A01F Q15
+U 1 1 5DA444FA
+P 8150 5150
+F 0 "Q15" H 8356 5196 50  0001 L CNN
+F 1 "TSM2302" H 8356 5150 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8350 5075 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ZXMN2A01F.pdf" H 8150 5150 50  0001 L CNN
+	1    8150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q16
+U 1 1 5DA44486
+P 9250 4850
+F 0 "Q16" H 9456 4896 50  0001 L CNN
+F 1 "IRF530N" H 9456 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9500 4775 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 9250 4850 50  0001 L CNN
+	1    9250 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4950 8250 4950
+Wire Wire Line
+	7400 3850 7400 4450
+Wire Wire Line
+	8250 4450 7400 4450
+Connection ~ 7400 4450
+Wire Wire Line
+	7400 4450 7400 4950
+Wire Wire Line
+	3650 6500 7250 6500
+Wire Wire Line
+	7250 6500 7250 4650
+Wire Wire Line
+	7250 4650 7950 4650
+Wire Wire Line
+	3650 6600 7350 6600
+Wire Wire Line
+	7350 6600 7350 5150
+Wire Wire Line
+	7350 5150 7950 5150
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5DB380B9
+P 1750 4150
+F 0 "H4" H 1850 4199 50  0001 L CNN
+F 1 "MountingHole_Pad" H 1850 4108 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1750 4150 50  0001 C CNN
+F 3 "~" H 1750 4150 50  0001 C CNN
+	1    1750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5DB380BF
+P 1750 4350
+F 0 "#PWR0124" H 1750 4100 50  0001 C CNN
+F 1 "GND" H 1755 4177 50  0000 C CNN
+F 2 "" H 1750 4350 50  0001 C CNN
+F 3 "" H 1750 4350 50  0001 C CNN
+	1    1750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4350 1750 4250
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DB4296F
+P 1550 4150
+F 0 "H2" H 1650 4199 50  0001 L CNN
+F 1 "MountingHole_Pad" H 1650 4108 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1550 4150 50  0001 C CNN
+F 3 "~" H 1550 4150 50  0001 C CNN
+	1    1550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5DB42975
+P 1550 4350
+F 0 "#PWR0125" H 1550 4100 50  0001 C CNN
+F 1 "GND" H 1555 4177 50  0000 C CNN
+F 2 "" H 1550 4350 50  0001 C CNN
+F 3 "" H 1550 4350 50  0001 C CNN
+	1    1550 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4350 1550 4250
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DB4D5B7
+P 1350 4150
+F 0 "H1" H 1450 4199 50  0001 L CNN
+F 1 "MountingHole_Pad" H 1450 4108 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1350 4150 50  0001 C CNN
+F 3 "~" H 1350 4150 50  0001 C CNN
+	1    1350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 5DB4D5BD
+P 1350 4350
+F 0 "#PWR0126" H 1350 4100 50  0001 C CNN
+F 1 "GND" H 1355 4177 50  0000 C CNN
+F 2 "" H 1350 4350 50  0001 C CNN
+F 3 "" H 1350 4350 50  0001 C CNN
+	1    1350 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 4350 1350 4250
 $EndSCHEMATC
