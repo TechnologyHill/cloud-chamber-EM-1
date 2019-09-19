@@ -11,6 +11,18 @@ module ALU_profile(size=30, height=10, radius=1.5, step=0.5) {
 			rotate([0,0,270]) sub_extrusion_profile(size, radius, step);
 		}
 	}
+    difference() {
+        union() {
+            translate([0, 0, height/2])
+                cube([size-radius*2, size, height], center=true);
+
+            translate([0, 0, height/2])
+                cube([size, size-radius*2, height], center=true);
+        }
+            translate([-2.5, -2.5, height/2])
+                cube([size, size, height], center=true);
+            
+        }
     
     module sub_extrusion_profile(size=30, radius = 1.5, step=0.5) {
 
