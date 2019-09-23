@@ -15,8 +15,11 @@ module ALU_profile_R(size=30, height=10, radius=1, step=0.5) {
             }
             difference() {
                 intersection() {
-                    translate([0, 0, height/2])
-                        cube([size, size, height], center=true);
+                    translate([0, 0, height/4])
+                        minkowski() {
+                            cube([size-radius*2, size-radius*2, height/2], center=true);
+                            cylinder(r=radius, h=height/2, $fn=4);
+                        }
                     cylinder(r=size, h=height, $fn=100);
                 }
                 translate([-size/2, -size/2, 0])
