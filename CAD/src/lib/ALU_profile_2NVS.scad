@@ -1,7 +1,7 @@
 // Aleksandr Saechnikov 09 june 2015
 ALU_profile(height=100, size=30);
 
-module ALU_profile(size=30, height=10, radius=1.5, step=0.5) {
+module ALU_profile_2NVS(size=30, height=10, radius=1.5, step=0.5) {
 
 	linear_extrude(height=height) {
 		union() {

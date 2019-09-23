@@ -1,52 +1,6 @@
-//============================================//
-//                CLOUD CHAMBER               //
-//============================================//
-
-
-//========== COMPONENTS ==========//
-
-//observation_surface_x
-observation_surface_x = 180;
-observation_surface_y = 100;
-
-//peltiers
-peltier_size_x = 40;
-peltier_size_y = 40;
-peltier_thickness = 2.9;
-peltier_cable_diameter = 4;
-
-//water ALU block
-water_block_width = 40;
-water_block_length = 120;
-water_block_thickness = 12.5;
-
-//hose
-hose_outer_diameter = 10;
-hose_inner_diameter = 8;
-
-//nextion display 2.8"
-nextion_board_width = 85;
-nextion_board_height = 50;
-nextion_board_thickness = 1.6;
-nextion_display_width = 69.5;
-nextion_display_height = 50;
-nextion_thickness = 7;
-nextion_screw_diameter = M2_5_nut_diameter;
-nextion_screw_width_distance = 78.5;
-nextion_screw_height_distance = 49;
-
-
-//========== ALU PROFILES ==========//
-
-//L_profile 2015
-L_2015_width = 20.2;
-L_2015_height = 15.2;
-L_2015_thickness = 2.2;
-
-//T_profile 2020
-T_2020_width = 20;
-T_2020_height = 20;
-T_2020_thickness = 2;
+//|==========================================|//
+//|               CLOUD CHAMBER              |//
+//|==========================================|//
 
 
 //========== SCREWS ==========//
@@ -102,3 +56,52 @@ M2_5_screw_diameter = 2.7;
 M2_5_nut_height = 2.3;
 M2_5_nut_diameter = 6;
 M2_5_nut_pocket = 5.1;
+
+
+//========== CHAMBER ==========//
+
+//observation_surface_x
+observation_surface_x = 180;
+observation_surface_y = 100;
+
+//chamber frame
+chamber_width = 400;
+chamber_deepth = 350;
+chamber_height = 250;
+
+//peltiers
+peltier_size_x = 40;
+peltier_size_y = 40;
+peltier_thickness = 2.9;
+peltier_cable_diameter = 4;
+
+//water ALU block
+water_block_width = 40;
+water_block_length = 120;
+water_block_thickness = 12.5;
+
+//hose
+hose_outer_diameter = 10;
+hose_inner_diameter = 8;
+
+//nextion display 2.8"
+nextion_board_width = 85;
+nextion_board_height = 50;
+nextion_board_thickness = 1.6;
+nextion_display_width = 69.5;
+nextion_display_height = 50;
+nextion_thickness = 7;
+nextion_screw_diameter = M2_5_screw_diameter;
+nextion_screw_width_distance = 78.5;
+nextion_screw_height_distance = 49;
+
+
+//========== ALU PROFILES ==========//
+
+//30x30 profile
+ALU30_size = 30;
+ALU30_groove = 8;
+
+//20x20 profile
+ALU20_size = 20;
+ALU20_groove = 6;
