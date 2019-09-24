@@ -69,6 +69,9 @@ chamber_width = 400;
 chamber_deepth = 350;
 chamber_height = 250;
 
+//service door
+door_width = 200;
+
 //peltiers
 peltier_size_x = 40;
 peltier_size_y = 40;
