@@ -2,3 +2,4 @@
 *.bck
 *.*-bak
 tmp/
+fp-info-cache

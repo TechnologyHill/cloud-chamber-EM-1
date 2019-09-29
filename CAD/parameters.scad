@@ -61,8 +61,13 @@ M2_5_nut_pocket = 5.1;
 //========== CHAMBER ==========//
 
 //observation_surface_x
-observation_surface_x = 180;
-observation_surface_y = 100;
+observation_surface_x = 180.5;
+observation_surface_y = 100.5;
+
+//cooper block
+cooper_block_x = 180;
+cooper_block_y = 100;
+cooper_block_thickness = 8;
 
 //chamber frame
 chamber_width = 400;
@@ -108,3 +113,13 @@ ALU30_groove = 8;
 //20x20 profile
 ALU20_size = 20;
 ALU20_groove = 6;
+
+
+//========== ELECTRONIC DEVICE ==========//
+
+//TO-92 package
+TO92_width = 4.6;
+TO92_height = 4.6;
+TO92_thickness = 3.9;
+TO92_pins = 14.5;
+TO92_bottom_to_pins = 1;
