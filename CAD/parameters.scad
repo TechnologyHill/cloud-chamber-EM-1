@@ -61,11 +61,11 @@ M2_5_nut_pocket = 5.1;
 //========== CHAMBER ==========//
 
 //observation_surface_x
-observation_surface_x = 180.5;
+observation_surface_x = 200.5;
 observation_surface_y = 100.5;
 
 //cooper block
-cooper_block_x = 180;
+cooper_block_x = 200;
 cooper_block_y = 100;
 cooper_block_thickness = 8;
 
