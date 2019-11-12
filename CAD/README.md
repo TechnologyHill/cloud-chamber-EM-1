@@ -6,7 +6,6 @@ To render *.stl* files by [makefile](https://github.com/ExperimentalMakers/cloud
 
 ```sudo pip install stlsort```
 
-
 ```make```
 
 ## Filename system
