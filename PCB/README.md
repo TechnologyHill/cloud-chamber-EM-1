@@ -1,5 +1,5 @@
 # ESP32 Control Board
-E32CB_R2
+**E32CB_R2**
 
 This PCB is compatible with [MLAB](https://github.com/MLAB-project).
 
