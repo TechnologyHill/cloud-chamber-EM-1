@@ -176,12 +176,12 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 power12V
 U 1 1 5DEF05BC
-P 4400 1050
-F 0 "power12V" V 4364 762 50  0000 R CNN
-F 1 "Conn_01x04" V 4273 762 50  0000 R CNN
-F 2 "Mlab_Pin_Headers:Straight_2x04" H 4400 1050 50  0001 C CNN
-F 3 "~" H 4400 1050 50  0001 C CNN
-	1    4400 1050
+P 4850 2150
+F 0 "power12V" V 4814 1862 50  0000 R CNN
+F 1 "Conn_01x04" V 4723 1862 50  0000 R CNN
+F 2 "Mlab_Pin_Headers:Straight_2x04" H 4850 2150 50  0001 C CNN
+F 3 "~" H 4850 2150 50  0001 C CNN
+	1    4850 2150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -275,6 +275,241 @@ F 3 "" H 2400 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 4300 2400 4050
+$Comp
+L Regulator_Linear:LF33_TO252 3V3stabilizer
+U 1 1 5DEEC619
+P 6250 4000
+F 0 "3V3stabilizer" H 6250 4242 50  0000 C CNN
+F 1 "LF33_TO252" H 6250 4151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 6250 4225 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 6250 3950 50  0001 C CNN
+	1    6250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DEEE2E5
+P 6250 4550
+F 0 "#PWR?" H 6250 4300 50  0001 C CNN
+F 1 "GND" H 6255 4377 50  0000 C CNN
+F 2 "" H 6250 4550 50  0001 C CNN
+F 3 "" H 6250 4550 50  0001 C CNN
+	1    6250 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5DF0E90E
+P 5750 3850
+F 0 "#PWR?" H 5750 3700 50  0001 C CNN
+F 1 "+12V" H 5765 4023 50  0000 C CNN
+F 2 "" H 5750 3850 50  0001 C CNN
+F 3 "" H 5750 3850 50  0001 C CNN
+	1    5750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DF0ECDB
+P 5350 3850
+F 0 "#PWR?" H 5350 3700 50  0001 C CNN
+F 1 "+5V" H 5365 4023 50  0000 C CNN
+F 2 "" H 5350 3850 50  0001 C CNN
+F 3 "" H 5350 3850 50  0001 C CNN
+	1    5350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3850 5750 4000
+Wire Wire Line
+	5750 4000 5950 4000
+Wire Wire Line
+	5350 3850 5350 4000
+$Comp
+L Diode:1N4007 D1
+U 1 1 5DF13A1A
+P 5550 4000
+F 0 "D1" H 5550 3784 50  0000 C CNN
+F 1 "1N4007" H 5550 3875 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 5550 3825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5550 4000 50  0001 C CNN
+	1    5550 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5700 4000 5750 4000
+Connection ~ 5750 4000
+Wire Wire Line
+	5400 4000 5350 4000
+$Comp
+L Device:C C3
+U 1 1 5DF1AC2C
+P 5750 4300
+F 0 "C3" H 5865 4346 50  0000 L CNN
+F 1 "100nF" H 5865 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5788 4150 50  0001 C CNN
+F 3 "~" H 5750 4300 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 5DF1B2ED
+P 6750 4300
+F 0 "C4" H 6868 4346 50  0000 L CNN
+F 1 "2.2uF" H 6868 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 6788 4150 50  0001 C CNN
+F 3 "~" H 6750 4300 50  0001 C CNN
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF1D2DD
+P 6750 4550
+F 0 "#PWR?" H 6750 4300 50  0001 C CNN
+F 1 "GND" H 6755 4377 50  0000 C CNN
+F 2 "" H 6750 4550 50  0001 C CNN
+F 3 "" H 6750 4550 50  0001 C CNN
+	1    6750 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF1E101
+P 5750 4550
+F 0 "#PWR?" H 5750 4300 50  0001 C CNN
+F 1 "GND" H 5755 4377 50  0000 C CNN
+F 2 "" H 5750 4550 50  0001 C CNN
+F 3 "" H 5750 4550 50  0001 C CNN
+	1    5750 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4300 6250 4550
+Wire Wire Line
+	5750 4450 5750 4550
+Wire Wire Line
+	5750 4150 5750 4000
+Wire Wire Line
+	6750 4550 6750 4450
+Wire Wire Line
+	6550 4000 6750 4000
+Wire Wire Line
+	6750 4000 6750 4150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5DF245BF
+P 6750 3850
+F 0 "#PWR?" H 6750 3700 50  0001 C CNN
+F 1 "+3V3" H 6765 4023 50  0000 C CNN
+F 2 "" H 6750 3850 50  0001 C CNN
+F 3 "" H 6750 3850 50  0001 C CNN
+	1    6750 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3850 6750 4000
+Connection ~ 6750 4000
+Wire Notes Line
+	5250 3600 7100 3600
+Wire Notes Line
+	7100 3600 7100 4800
+Wire Notes Line
+	7100 4800 5250 4800
+Wire Notes Line
+	5250 4800 5250 3600
+$Comp
+L Diode:1N4007 D2
+U 1 1 5DF55C54
+P 5500 2600
+F 0 "D2" H 5500 2384 50  0000 C CNN
+F 1 "1N4007" H 5500 2475 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA_Handsoldering" H 5500 2425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5500 2600 50  0001 C CNN
+	1    5500 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5DF56658
+P 4900 2450
+F 0 "#PWR?" H 4900 2300 50  0001 C CNN
+F 1 "+12V" H 4915 2623 50  0000 C CNN
+F 2 "" H 4900 2450 50  0001 C CNN
+F 3 "" H 4900 2450 50  0001 C CNN
+	1    4900 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF817FA
+P 4750 2600
+F 0 "#PWR?" H 4750 2350 50  0001 C CNN
+F 1 "GND" H 4755 2427 50  0000 C CNN
+F 2 "" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2350 4850 2450
+Wire Wire Line
+	4850 2450 4900 2450
+Wire Wire Line
+	4950 2350 4950 2450
+Wire Wire Line
+	4950 2450 4900 2450
+Connection ~ 4900 2450
+Wire Wire Line
+	5050 2350 5050 2600
+Wire Wire Line
+	4750 2350 4750 2600
+$Comp
+L power:+12V #PWR?
+U 1 1 5DF863CB
+P 5750 2600
+F 0 "#PWR?" H 5750 2450 50  0001 C CNN
+F 1 "+12V" H 5765 2773 50  0000 C CNN
+F 2 "" H 5750 2600 50  0001 C CNN
+F 3 "" H 5750 2600 50  0001 C CNN
+	1    5750 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF56B75
+P 5050 2600
+F 0 "#PWR?" H 5050 2350 50  0001 C CNN
+F 1 "GND" H 5055 2427 50  0000 C CNN
+F 2 "" H 5050 2600 50  0001 C CNN
+F 3 "" H 5050 2600 50  0001 C CNN
+	1    5050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DF87794
+P 5250 2600
+F 0 "#PWR?" H 5250 2350 50  0001 C CNN
+F 1 "GND" H 5255 2427 50  0000 C CNN
+F 2 "" H 5250 2600 50  0001 C CNN
+F 3 "" H 5250 2600 50  0001 C CNN
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2600 5250 2600
+Wire Wire Line
+	5650 2600 5750 2600
+Wire Notes Line
+	4650 2850 4650 2050
+Wire Notes Line
+	4650 2050 5850 2050
+Wire Notes Line
+	5850 2050 5850 2850
+Wire Notes Line
+	5850 2850 4650 2850
 Wire Bus Line
 	3400 4400 3400 4700
 Wire Bus Line
