@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PCB-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -44,17 +43,6 @@ Text Label 1750 1750 0    50   ~ 0
 usb_P
 Text Label 1750 1850 0    50   ~ 0
 usb_N
-$Comp
-L RF_Module:ESP32-WROOM-32 U1
-U 1 1 5DA32DFA
-P 3700 5150
-F 0 "U1" H 3700 6731 50  0001 C CNN
-F 1 "ESP32-WROOM-32" H 3700 6639 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 3700 3650 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3400 5200 50  0001 C CNN
-	1    3700 5150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:Crystal X1
 U 1 1 5DA400F9
@@ -165,158 +153,6 @@ Wire Wire Line
 Connection ~ 1450 2200
 Wire Wire Line
 	1450 2200 1450 2150
-Entry Wire Line
-	3350 1450 3450 1550
-Entry Wire Line
-	3350 1550 3450 1650
-Entry Wire Line
-	3350 2150 3450 2250
-Entry Wire Line
-	3350 2250 3450 2350
-Wire Wire Line
-	3200 1450 3350 1450
-Wire Wire Line
-	3200 1550 3350 1550
-Wire Wire Line
-	3200 2150 3350 2150
-Wire Wire Line
-	3200 2250 3350 2250
-Text Label 3250 1450 0    50   ~ 0
-TXD
-Text Label 3250 1550 0    50   ~ 0
-RXD
-Text Label 3250 2150 0    50   ~ 0
-DTR
-Text Label 3250 2250 0    50   ~ 0
-RTS
-Wire Wire Line
-	3100 3950 2950 3950
-Wire Wire Line
-	2950 3950 2950 3600
-Entry Wire Line
-	2950 3600 3050 3500
-Wire Wire Line
-	4300 4050 4550 4050
-Wire Wire Line
-	4300 4250 4550 4250
-Entry Wire Line
-	4550 4050 4650 3950
-Entry Wire Line
-	4550 4250 4650 4150
-Wire Bus Line
-	4650 3500 3050 3500
-Wire Bus Line
-	3050 3500 3050 2500
-Wire Bus Line
-	3050 2500 3450 2500
-Text Label 4400 4250 0    50   ~ 0
-TXD
-Text Label 4400 4050 0    50   ~ 0
-RXD
-Text Label 2950 3950 0    50   ~ 0
-RTS
-Wire Wire Line
-	4300 3950 4550 3950
-Entry Wire Line
-	4550 3950 4650 3850
-Text Label 4400 3950 0    50   ~ 0
-DTR
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 5DA62BDB
-P 3700 3350
-F 0 "#PWR0108" H 3700 3200 50  0001 C CNN
-F 1 "+3.3V" H 3715 3523 50  0000 C CNN
-F 2 "" H 3700 3350 50  0001 C CNN
-F 3 "" H 3700 3350 50  0001 C CNN
-	1    3700 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 3750 3700 3350
-$Comp
-L power:GND #PWR0109
-U 1 1 5DA64609
-P 3700 6700
-F 0 "#PWR0109" H 3700 6450 50  0001 C CNN
-F 1 "GND" H 3705 6527 50  0000 C CNN
-F 2 "" H 3700 6700 50  0001 C CNN
-F 3 "" H 3700 6700 50  0001 C CNN
-	1    3700 6700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 6700 3700 6550
-$Comp
-L Connector_Generic:Conn_01x03 power_12V1
-U 1 1 5DA737E0
-P 1400 3950
-F 0 "power_12V1" V 1364 3762 50  0000 R CNN
-F 1 "Conn_01x03" V 1273 3762 50  0000 R CNN
-F 2 "Mlab_Pin_Headers:Straight_2x03" H 1400 3950 50  0001 C CNN
-F 3 "~" H 1400 3950 50  0001 C CNN
-	1    1400 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR0101
-U 1 1 5DA7649D
-P 1400 4350
-F 0 "#PWR0101" H 1400 4200 50  0001 C CNN
-F 1 "+12V" H 1415 4523 50  0000 C CNN
-F 2 "" H 1400 4350 50  0001 C CNN
-F 3 "" H 1400 4350 50  0001 C CNN
-	1    1400 4350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5DA7684F
-P 1600 4350
-F 0 "#PWR0102" H 1600 4100 50  0001 C CNN
-F 1 "GND" H 1605 4177 50  0000 C CNN
-F 2 "" H 1600 4350 50  0001 C CNN
-F 3 "" H 1600 4350 50  0001 C CNN
-	1    1600 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5DA76A88
-P 1200 4350
-F 0 "#PWR0103" H 1200 4100 50  0001 C CNN
-F 1 "GND" H 1205 4177 50  0000 C CNN
-F 2 "" H 1200 4350 50  0001 C CNN
-F 3 "" H 1200 4350 50  0001 C CNN
-	1    1200 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 4350 1400 4150
-Wire Wire Line
-	1300 4150 1300 4350
-Wire Wire Line
-	1300 4350 1200 4350
-Wire Wire Line
-	1500 4150 1500 4350
-Wire Wire Line
-	1500 4350 1600 4350
-Wire Notes Line
-	1050 4600 1050 3850
-Wire Notes Line
-	1050 3850 2100 3850
-Wire Notes Line
-	2100 3850 2100 4600
-Wire Notes Line
-	2100 4600 1050 4600
-Wire Notes Line
-	1150 1050 3550 1050
-Wire Notes Line
-	3550 1050 3550 3400
-Wire Notes Line
-	3550 3400 1150 3400
-Wire Notes Line
-	1150 3400 1150 1050
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5DA82738
@@ -334,11 +170,113 @@ Wire Wire Line
 	2700 1150 2700 1250
 Wire Wire Line
 	2800 1250 2800 1150
-Wire Bus Line
-	4650 3500 4650 4150
-Wire Bus Line
-	3450 1550 3450 2500
 Connection ~ 2800 1150
 Wire Wire Line
 	2800 1150 2700 1150
+$Comp
+L Connector_Generic:Conn_01x04 power12V
+U 1 1 5DEF05BC
+P 4400 1050
+F 0 "power12V" V 4364 762 50  0000 R CNN
+F 1 "Conn_01x04" V 4273 762 50  0000 R CNN
+F 2 "Mlab_Pin_Headers:Straight_2x04" H 4400 1050 50  0001 C CNN
+F 3 "~" H 4400 1050 50  0001 C CNN
+	1    4400 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 5DA32DFA
+P 2400 5700
+F 0 "U1" H 2400 7281 50  0001 C CNN
+F 1 "ESP32-WROOM-32" H 2400 7189 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2400 4200 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2100 5750 50  0001 C CNN
+	1    2400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5DA64609
+P 2400 7250
+F 0 "#PWR0109" H 2400 7000 50  0001 C CNN
+F 1 "GND" H 2405 7077 50  0000 C CNN
+F 2 "" H 2400 7250 50  0001 C CNN
+F 3 "" H 2400 7250 50  0001 C CNN
+	1    2400 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 7250 2400 7100
+Wire Wire Line
+	3000 4500 3300 4500
+Wire Wire Line
+	3000 4600 3300 4600
+Wire Wire Line
+	3000 4800 3300 4800
+Wire Wire Line
+	1800 4500 1500 4500
+Wire Wire Line
+	3200 1450 3500 1450
+Wire Wire Line
+	3200 1550 3500 1550
+Wire Wire Line
+	3200 2150 3500 2150
+Wire Wire Line
+	3200 2250 3500 2250
+Text Label 3250 1450 0    50   ~ 0
+TXD
+Text Label 3250 1550 0    50   ~ 0
+RXD
+Text Label 3250 2150 0    50   ~ 0
+DTR
+Text Label 3250 2250 0    50   ~ 0
+RTS
+Text Label 1550 4500 0    50   ~ 0
+RTS
+Text Label 3050 4500 0    50   ~ 0
+DTR
+Text Label 3050 4600 0    50   ~ 0
+RXD
+Text Label 3050 4800 0    50   ~ 0
+TXD
+Entry Wire Line
+	3300 4800 3400 4700
+Entry Wire Line
+	3300 4600 3400 4500
+Entry Wire Line
+	3300 4500 3400 4400
+Entry Wire Line
+	3500 2250 3600 2350
+Entry Wire Line
+	3500 2150 3600 2250
+Entry Wire Line
+	3500 1550 3600 1650
+Entry Wire Line
+	3500 1450 3600 1550
+Wire Bus Line
+	3600 4400 3400 4400
+Wire Wire Line
+	1500 4500 1500 3600
+Entry Wire Line
+	3500 3600 3600 3500
+Wire Wire Line
+	1500 3600 3500 3600
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DF14F2C
+P 2400 4050
+F 0 "#PWR?" H 2400 3900 50  0001 C CNN
+F 1 "+3.3V" H 2415 4223 50  0000 C CNN
+F 2 "" H 2400 4050 50  0001 C CNN
+F 3 "" H 2400 4050 50  0001 C CNN
+	1    2400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4300 2400 4050
+Wire Bus Line
+	3400 4400 3400 4700
+Wire Bus Line
+	3600 1550 3600 4400
 $EndSCHEMATC
