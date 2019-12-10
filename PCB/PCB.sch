@@ -95,7 +95,7 @@ L Connector_Generic:Conn_01x04 power12V
 U 1 1 5DEF05BC
 P 9450 700
 F 0 "power12V" V 9450 400 50  0000 R CNN
-F 1 "Conn_01x04" V 9350 400 50  0000 R CNN
+F 1 "Conn_01x04" V 9350 400 50  0001 R CNN
 F 2 "Mlab_Pin_Headers:Straight_2x04" H 9450 700 50  0001 C CNN
 F 3 "~" H 9450 700 50  0001 C CNN
 	1    9450 700 
