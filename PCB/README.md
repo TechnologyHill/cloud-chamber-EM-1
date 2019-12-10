@@ -4,9 +4,9 @@ We use [KiCad](http://www.kicad-pcb.org) to create PCB layout
 
 ### Top view
 
-![image](PCB_top.png)
+![image](doc/PCB_top.png)
 
 
 ### Bottom view
 
-![image](PCB_bottom.png)
+![image](doc/PCB_bottom.png)
