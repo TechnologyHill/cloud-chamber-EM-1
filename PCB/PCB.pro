@@ -1,4 +1,4 @@
-update=Út 10. prosince 2019, 20:08:01 CET
+update=Út 10. prosince 2019, 20:30:24 CET
 version=1
 last_client=kicad
 [general]
@@ -253,7 +253,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=doc/schema.pdf
+PlotDirectoryName=doc/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
