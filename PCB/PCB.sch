@@ -922,7 +922,7 @@ U 1 1 5E001ADA
 P 9750 1800
 F 0 "I2C" V 9850 1850 50  0000 R CNN
 F 1 "Conn_01x05" V 9623 1512 50  0001 R CNN
-F 2 "" H 9750 1800 50  0001 C CNN
+F 2 "Mlab_Pin_Headers:Straight_2x05" H 9750 1800 50  0001 C CNN
 F 3 "~" H 9750 1800 50  0001 C CNN
 	1    9750 1800
 	0    -1   -1   0   
@@ -1031,4 +1031,60 @@ Wire Notes Line
 	9150 1650 9150 2900
 Text Notes 9150 1650 0    50   ~ 10
 I2C
+$Comp
+L Connector_Generic:Conn_01x04 NEXTION_UART
+U 1 1 5E06DABD
+P 4500 3450
+F 0 "NEXTION_UART" V 4600 3650 50  0000 R CNN
+F 1 "Conn_01x04" V 4373 3162 50  0001 R CNN
+F 2 "Mlab_Pin_Headers:Angled_1x04" H 4500 3450 50  0001 C CNN
+F 3 "~" H 4500 3450 50  0001 C CNN
+	1    4500 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E07C9EB
+P 4350 3750
+F 0 "#PWR?" H 4350 3500 50  0001 C CNN
+F 1 "GND" H 4355 3577 50  0000 C CNN
+F 2 "" H 4350 3750 50  0001 C CNN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3650 4400 3700
+Wire Wire Line
+	4400 3700 4350 3700
+Wire Wire Line
+	4350 3700 4350 3750
+Wire Wire Line
+	4700 3650 4700 3750
+Wire Wire Line
+	4700 3750 4800 3750
+Text Label 4800 3750 0    50   ~ 0
+display_Vin
+Wire Wire Line
+	4600 3650 4600 3850
+Wire Wire Line
+	4600 3850 4800 3850
+Wire Wire Line
+	4500 3650 4500 3950
+Wire Wire Line
+	4500 3950 4800 3950
+Text Label 4800 3850 0    50   ~ 0
+U2_RXD
+Text Label 4800 3950 0    50   ~ 0
+U2_TXD
+Wire Notes Line
+	4250 4000 4250 3300
+Wire Notes Line
+	4250 3300 5250 3300
+Wire Notes Line
+	5250 3300 5250 4000
+Wire Notes Line
+	5250 4000 4250 4000
+Text Notes 4250 3300 0    50   ~ 10
+NEXTION connector
 $EndSCHEMATC
