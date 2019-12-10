@@ -513,84 +513,84 @@ Wire Notes Line
 $Comp
 L Regulator_Linear:L7805 5Vstabilizer
 U 1 1 5DEFDF14
-P 8300 1250
-F 0 "5Vstabilizer" H 8300 1492 50  0000 C CNN
-F 1 "L7805" H 8300 1401 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 8325 1100 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8300 1200 50  0001 C CNN
-	1    8300 1250
+P 7850 3400
+F 0 "5Vstabilizer" H 7850 3642 50  0000 C CNN
+F 1 "L7805" H 7850 3551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7875 3250 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 7850 3350 50  0001 C CNN
+	1    7850 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C5
 U 1 1 5DEFEA91
-P 7800 1550
-F 0 "C5" H 7915 1596 50  0000 L CNN
-F 1 "330nF" H 7915 1505 50  0000 L CNN
-F 2 "" H 7838 1400 50  0001 C CNN
-F 3 "~" H 7800 1550 50  0001 C CNN
-	1    7800 1550
+P 7350 3700
+F 0 "C5" H 7465 3746 50  0000 L CNN
+F 1 "330nF" H 7465 3655 50  0000 L CNN
+F 2 "" H 7388 3550 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
 U 1 1 5DF004CD
-P 8800 1550
-F 0 "C6" H 8915 1596 50  0000 L CNN
-F 1 "100nF" H 8915 1505 50  0000 L CNN
-F 2 "" H 8838 1400 50  0001 C CNN
-F 3 "~" H 8800 1550 50  0001 C CNN
-	1    8800 1550
+P 8350 3700
+F 0 "C6" H 8465 3746 50  0000 L CNN
+F 1 "100nF" H 8465 3655 50  0000 L CNN
+F 2 "" H 8388 3550 50  0001 C CNN
+F 3 "~" H 8350 3700 50  0001 C CNN
+	1    8350 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5DF01822
-P 8300 1800
-F 0 "#PWR?" H 8300 1550 50  0001 C CNN
-F 1 "GND" H 8305 1627 50  0000 C CNN
-F 2 "" H 8300 1800 50  0001 C CNN
-F 3 "" H 8300 1800 50  0001 C CNN
-	1    8300 1800
+P 7850 3950
+F 0 "#PWR?" H 7850 3700 50  0001 C CNN
+F 1 "GND" H 7855 3777 50  0000 C CNN
+F 2 "" H 7850 3950 50  0001 C CNN
+F 3 "" H 7850 3950 50  0001 C CNN
+	1    7850 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 1550 8300 1750
+	7850 3700 7850 3900
 Wire Wire Line
-	7800 1700 7800 1750
+	7350 3850 7350 3900
 Wire Wire Line
-	7800 1750 8300 1750
-Connection ~ 8300 1750
+	7350 3900 7850 3900
+Connection ~ 7850 3900
 Wire Wire Line
-	8300 1750 8300 1800
+	7850 3900 7850 3950
 Wire Wire Line
-	8800 1700 8800 1750
+	8350 3850 8350 3900
 Wire Wire Line
-	8800 1750 8300 1750
+	8350 3900 7850 3900
 Wire Wire Line
-	8600 1250 8800 1250
+	8150 3400 8350 3400
 Wire Wire Line
-	8800 1250 8800 1400
+	8350 3400 8350 3550
 Wire Wire Line
-	8000 1250 7800 1250
+	7550 3400 7350 3400
 Wire Wire Line
-	7800 1250 7800 1400
+	7350 3400 7350 3550
 $Comp
 L power:+12V #PWR?
 U 1 1 5DF0D536
-P 7600 1150
-F 0 "#PWR?" H 7600 1000 50  0001 C CNN
-F 1 "+12V" H 7615 1323 50  0000 C CNN
-F 2 "" H 7600 1150 50  0001 C CNN
-F 3 "" H 7600 1150 50  0001 C CNN
-	1    7600 1150
+P 7150 3300
+F 0 "#PWR?" H 7150 3150 50  0001 C CNN
+F 1 "+12V" H 7165 3473 50  0000 C CNN
+F 2 "" H 7150 3300 50  0001 C CNN
+F 3 "" H 7150 3300 50  0001 C CNN
+	1    7150 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 1150 7600 1250
+	7150 3300 7150 3400
 Wire Wire Line
-	7600 1250 7800 1250
-Connection ~ 7800 1250
+	7150 3400 7350 3400
+Connection ~ 7350 3400
 Wire Wire Line
 	3000 6800 3350 6800
 Wire Wire Line
@@ -744,14 +744,100 @@ Wire Wire Line
 	5200 7200 5200 7050
 Wire Wire Line
 	4250 7200 4250 7050
+Text Notes 4050 900  0    50   ~ 10
+12V power
+Text Notes 5450 900  0    50   ~ 10
+3V3 stabilizer
+$Comp
+L power:GND #PWR?
+U 1 1 5DEFBA7E
+P 8800 1050
+F 0 "#PWR?" H 8800 800 50  0001 C CNN
+F 1 "GND" H 8805 877 50  0000 C CNN
+F 2 "" H 8800 1050 50  0001 C CNN
+F 3 "" H 8800 1050 50  0001 C CNN
+	1    8800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5DEFC3BB
+P 8450 1150
+F 0 "H1" H 8350 1107 50  0000 R CNN
+F 1 "M3" H 8350 1198 50  0000 R CNN
+F 2 "" H 8450 1150 50  0001 C CNN
+F 3 "~" H 8450 1150 50  0001 C CNN
+	1    8450 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5DEFCF01
+P 8150 1150
+F 0 "H2" H 8050 1107 50  0000 R CNN
+F 1 "M3" H 8050 1198 50  0000 R CNN
+F 2 "" H 8150 1150 50  0001 C CNN
+F 3 "~" H 8150 1150 50  0001 C CNN
+	1    8150 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5DEFD2BA
+P 7850 1150
+F 0 "H3" H 7750 1107 50  0000 R CNN
+F 1 "M3" H 7750 1198 50  0000 R CNN
+F 2 "" H 7850 1150 50  0001 C CNN
+F 3 "~" H 7850 1150 50  0001 C CNN
+	1    7850 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5DEFD6E9
+P 7550 1150
+F 0 "H4" H 7450 1107 50  0000 R CNN
+F 1 "M3" H 7450 1198 50  0000 R CNN
+F 2 "" H 7550 1150 50  0001 C CNN
+F 3 "~" H 7550 1150 50  0001 C CNN
+	1    7550 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 1050 7550 950 
+Wire Wire Line
+	7550 950  7850 950 
+Wire Wire Line
+	8800 950  8800 1050
+Wire Wire Line
+	8450 1050 8450 950 
+Connection ~ 8450 950 
+Wire Wire Line
+	8450 950  8800 950 
+Wire Wire Line
+	8150 1050 8150 950 
+Connection ~ 8150 950 
+Wire Wire Line
+	8150 950  8450 950 
+Wire Wire Line
+	7850 1050 7850 950 
+Connection ~ 7850 950 
+Wire Wire Line
+	7850 950  8150 950 
+Wire Notes Line
+	7450 1300 7450 900 
+Wire Notes Line
+	7450 900  8900 900 
+Wire Notes Line
+	8900 900  8900 1300
+Wire Notes Line
+	8900 1300 7450 1300
+Text Notes 7450 900  0    50   ~ 10
+Mounting holes
 Wire Bus Line
 	3400 4400 3400 4700
 Wire Bus Line
 	3600 1550 3600 4400
 Wire Bus Line
 	3450 7250 6250 7250
-Text Notes 4050 900  0    50   ~ 10
-12V power
-Text Notes 5450 900  0    50   ~ 10
-3V3 stabilizer
 $EndSCHEMATC
