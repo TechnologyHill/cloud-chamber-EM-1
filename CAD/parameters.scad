@@ -123,3 +123,14 @@ TO92_height = 4.6;
 TO92_thickness = 3.9;
 TO92_pins = 14.5;
 TO92_bottom_to_pins = 1;
+
+//========== COOLING CIRCUIT ==========//
+
+//pump
+pump_diameter = 70;
+pump_height = 135;
+pump_in_out_distance = 40;
+pump_in_out_diameter = 20;
+pump_in_out_inner_diameter = 15;
+pump_in_out_height = 30;
+pump_in_out_overlap = 5;
