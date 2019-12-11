@@ -104,29 +104,29 @@ $EndComp
 $Comp
 L RF_Module:ESP32-WROOM-32 U1
 U 1 1 5DA32DFA
-P 3200 5450
-F 0 "U1" H 3200 7031 50  0001 C CNN
-F 1 "ESP32-WROOM-32" V 3200 5450 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 3200 3950 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2900 5500 50  0001 C CNN
-	1    3200 5450
+P 3750 5450
+F 0 "U1" H 3750 7031 50  0001 C CNN
+F 1 "ESP32-WROOM-32" V 3750 5450 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 3750 3950 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3450 5500 50  0001 C CNN
+	1    3750 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5DA64609
-P 3200 7000
-F 0 "#PWR0109" H 3200 6750 50  0001 C CNN
-F 1 "GND" H 3205 6827 50  0000 C CNN
-F 2 "" H 3200 7000 50  0001 C CNN
-F 3 "" H 3200 7000 50  0001 C CNN
-	1    3200 7000
+P 3750 7000
+F 0 "#PWR0109" H 3750 6750 50  0001 C CNN
+F 1 "GND" H 3755 6827 50  0000 C CNN
+F 2 "" H 3750 7000 50  0001 C CNN
+F 3 "" H 3750 7000 50  0001 C CNN
+	1    3750 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 7000 3200 6850
+	3750 7000 3750 6850
 Wire Wire Line
-	2600 4250 2300 4250
+	3150 4250 2850 4250
 Text Label 4850 1150 0    50   ~ 0
 TXD
 Text Label 4850 1250 0    50   ~ 0
@@ -135,23 +135,23 @@ Text Label 4650 1850 0    50   ~ 0
 DTR
 Text Label 4650 1950 0    50   ~ 0
 RTS
-Text Label 2300 4250 0    50   ~ 0
+Text Label 2850 4250 0    50   ~ 0
 RTS
-Text Label 3950 4250 0    50   ~ 0
+Text Label 4500 4250 0    50   ~ 0
 DTR
-Text Label 3950 4350 0    50   ~ 0
+Text Label 4500 4350 0    50   ~ 0
 RXD
-Text Label 3950 4550 0    50   ~ 0
+Text Label 4500 4550 0    50   ~ 0
 TXD
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5DF14F2C
-P 3200 3900
-F 0 "#PWR0102" H 3200 3750 50  0001 C CNN
-F 1 "+3.3V" H 3215 4073 50  0000 C CNN
-F 2 "" H 3200 3900 50  0001 C CNN
-F 3 "" H 3200 3900 50  0001 C CNN
-	1    3200 3900
+P 3750 3900
+F 0 "#PWR0102" H 3750 3750 50  0001 C CNN
+F 1 "+3.3V" H 3765 4073 50  0000 C CNN
+F 2 "" H 3750 3900 50  0001 C CNN
+F 3 "" H 3750 3900 50  0001 C CNN
+	1    3750 3900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -470,11 +470,11 @@ Wire Wire Line
 Wire Wire Line
 	650  2250 850  2250
 Connection ~ 850  2250
-Text Label 3950 6550 0    50   ~ 0
+Text Label 4500 6550 0    50   ~ 0
 fan1
-Text Label 3950 4950 0    50   ~ 0
+Text Label 4500 4950 0    50   ~ 0
 fan2
-Text Label 3950 4850 0    50   ~ 0
+Text Label 4500 4850 0    50   ~ 0
 fan3
 Text Notes 8850 600  0    50   ~ 10
 12V power
@@ -561,17 +561,17 @@ Wire Notes Line
 Text Notes 2450 2600 0    50   ~ 10
 Mounting holes
 Wire Wire Line
-	3800 4250 3950 4250
+	4350 4250 4500 4250
 Wire Wire Line
-	3800 4350 3950 4350
+	4350 4350 4500 4350
 Wire Wire Line
-	3800 4550 3950 4550
+	4350 4550 4500 4550
 Wire Wire Line
-	3800 4850 3950 4850
+	4350 4850 4500 4850
 Wire Wire Line
-	3800 4950 3950 4950
+	4350 4950 4500 4950
 Wire Wire Line
-	3800 6550 3950 6550
+	4350 6550 4500 6550
 $Comp
 L Interface_USB:CH340G CH340G1
 U 1 1 5DA2241A
@@ -595,7 +595,7 @@ F 3 "~" H 4000 700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3200 3900 3200 4050
+	3750 3900 3750 4050
 Wire Wire Line
 	4500 1850 4650 1850
 Wire Wire Line
@@ -879,20 +879,20 @@ Wire Notes Line
 Text Notes 5100 600  0    50   ~ 10
 PWM cooling fans
 Wire Wire Line
-	3800 6350 3950 6350
+	4350 6350 4500 6350
 Wire Wire Line
-	3800 6450 3950 6450
-Text Label 3950 6350 0    50   ~ 0
+	4350 6450 4500 6450
+Text Label 4500 6350 0    50   ~ 0
 I2C_SCL
-Text Label 3950 6450 0    50   ~ 0
+Text Label 4500 6450 0    50   ~ 0
 I2C_SDA
 Wire Wire Line
-	3800 5250 3950 5250
+	4350 5250 4500 5250
 Wire Wire Line
-	3800 5350 3950 5350
-Text Label 3950 5250 0    50   ~ 0
+	4350 5350 4500 5350
+Text Label 4500 5250 0    50   ~ 0
 U2_RXD
-Text Label 3950 5350 0    50   ~ 0
+Text Label 4500 5350 0    50   ~ 0
 U2_TXD
 $Comp
 L Connector_Generic:Conn_01x05 I2C
@@ -1066,8 +1066,8 @@ Wire Notes Line
 Text Notes 10100 600  0    50   ~ 10
 NEXTION connector
 Wire Wire Line
-	3800 5850 3950 5850
-Text Label 3950 5850 0    50   ~ 0
+	4350 5850 4500 5850
+Text Label 4500 5850 0    50   ~ 0
 OneWire
 $Comp
 L Connector_Generic:Conn_01x05 OneWire
@@ -1209,4 +1209,171 @@ Wire Notes Line
 	2450 2600 2450 3050
 Wire Notes Line
 	3900 2600 3900 3050
+$Comp
+L Device:LED RXD
+U 1 1 5E04BA83
+P 1300 3650
+F 0 "RXD" H 1293 3395 50  0000 C CNN
+F 1 "LED_R" H 1293 3486 50  0000 C CNN
+F 2 "" H 1300 3650 50  0001 C CNN
+F 3 "~" H 1300 3650 50  0001 C CNN
+	1    1300 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5E057CB9
+P 950 3650
+F 0 "R6" V 754 3650 50  0000 C CNN
+F 1 "1k" V 845 3650 50  0000 C CNN
+F 2 "Mlab_R:SMD-1206" H 950 3650 50  0001 C CNN
+F 3 "~" H 950 3650 50  0001 C CNN
+	1    950  3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E061ED7
+P 650 3400
+F 0 "#PWR?" H 650 3250 50  0001 C CNN
+F 1 "+3.3V" H 665 3573 50  0000 C CNN
+F 2 "" H 650 3400 50  0001 C CNN
+F 3 "" H 650 3400 50  0001 C CNN
+	1    650  3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R7
+U 1 1 5E06218F
+P 950 4000
+F 0 "R7" V 754 4000 50  0000 C CNN
+F 1 "1k" V 845 4000 50  0000 C CNN
+F 2 "Mlab_R:SMD-1206" H 950 4000 50  0001 C CNN
+F 3 "~" H 950 4000 50  0001 C CNN
+	1    950  4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED TXD
+U 1 1 5E062710
+P 1300 4000
+F 0 "TXD" H 1300 3750 50  0000 C CNN
+F 1 "LED_R" H 1293 3836 50  0000 C CNN
+F 2 "" H 1300 4000 50  0001 C CNN
+F 3 "~" H 1300 4000 50  0001 C CNN
+	1    1300 4000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	650  3400 650  3650
+Wire Wire Line
+	650  3650 850  3650
+Wire Wire Line
+	850  4000 650  4000
+Wire Wire Line
+	650  4000 650  3650
+Connection ~ 650  3650
+Wire Wire Line
+	1050 3650 1150 3650
+Wire Wire Line
+	1050 4000 1150 4000
+Wire Wire Line
+	1450 3650 1600 3650
+Wire Wire Line
+	1450 4000 1600 4000
+Text Label 1600 3650 0    50   ~ 0
+RXD
+Text Label 1600 4000 0    50   ~ 0
+TXD
+$Comp
+L Device:LED Power
+U 1 1 5E08E5BB
+P 1300 4400
+F 0 "Power" H 1300 4150 50  0000 C CNN
+F 1 "LED_R" H 1293 4236 50  0000 C CNN
+F 2 "" H 1300 4400 50  0001 C CNN
+F 3 "~" H 1300 4400 50  0001 C CNN
+	1    1300 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R8
+U 1 1 5E08ED9B
+P 950 4400
+F 0 "R8" V 754 4400 50  0000 C CNN
+F 1 "1k" V 845 4400 50  0000 C CNN
+F 2 "Mlab_R:SMD-1206" H 950 4400 50  0001 C CNN
+F 3 "~" H 950 4400 50  0001 C CNN
+	1    950  4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED signal
+U 1 1 5E08F438
+P 1300 4800
+F 0 "signal" H 1300 4550 50  0000 C CNN
+F 1 "LED_R" H 1293 4636 50  0000 C CNN
+F 2 "" H 1300 4800 50  0001 C CNN
+F 3 "~" H 1300 4800 50  0001 C CNN
+	1    1300 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R9
+U 1 1 5E08FAD8
+P 950 4800
+F 0 "R9" V 754 4800 50  0000 C CNN
+F 1 "1k" V 845 4800 50  0000 C CNN
+F 2 "Mlab_R:SMD-1206" H 950 4800 50  0001 C CNN
+F 3 "~" H 950 4800 50  0001 C CNN
+	1    950  4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	850  4400 650  4400
+Wire Wire Line
+	650  4400 650  4000
+Connection ~ 650  4000
+$Comp
+L power:GND #PWR?
+U 1 1 5E09628C
+P 1600 4900
+F 0 "#PWR?" H 1600 4650 50  0001 C CNN
+F 1 "GND" H 1605 4727 50  0000 C CNN
+F 2 "" H 1600 4900 50  0001 C CNN
+F 3 "" H 1600 4900 50  0001 C CNN
+	1    1600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4800 1600 4800
+Wire Wire Line
+	1600 4800 1600 4900
+Wire Wire Line
+	1450 4400 1600 4400
+Wire Wire Line
+	1600 4400 1600 4800
+Connection ~ 1600 4800
+Wire Wire Line
+	1050 4400 1150 4400
+Wire Wire Line
+	1050 4800 1150 4800
+Wire Wire Line
+	850  4800 650  4800
+Wire Wire Line
+	4350 6250 4500 6250
+Text Label 4500 6250 0    50   ~ 0
+s_LED
+Text Label 650  4800 0    50   ~ 0
+s_LED
+Wire Notes Line
+	550  3150 1800 3150
+Wire Notes Line
+	1800 3150 1800 5150
+Wire Notes Line
+	1800 5150 550  5150
+Wire Notes Line
+	550  5150 550  3150
+Text Notes 550  3150 0    50   ~ 10
+LED
 $EndSCHEMATC
