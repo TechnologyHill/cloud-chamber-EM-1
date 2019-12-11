@@ -587,7 +587,7 @@ $Comp
 L Device:Fuse_Small F1
 U 1 1 5DF6469B
 P 4000 700
-F 0 "F1" H 4000 750 50  0000 C CNN
+F 0 "F1" H 4000 800 50  0000 C CNN
 F 1 "1A" H 4000 650 50  0000 C CNN
 F 2 "Fuse:Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 4000 700 50  0001 C CNN
 F 3 "~" H 4000 700 50  0001 C CNN
@@ -1375,5 +1375,5 @@ Wire Notes Line
 Wire Notes Line
 	550  5150 550  3150
 Text Notes 550  3150 0    50   ~ 10
-LED
+LED indicator
 $EndSCHEMATC
