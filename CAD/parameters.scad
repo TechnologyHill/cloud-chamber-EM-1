@@ -134,3 +134,23 @@ pump_in_out_diameter = 20;
 pump_in_out_inner_diameter = 15;
 pump_in_out_height = 30;
 pump_in_out_overlap = 5;
+
+//radiator
+radiator_width = 392;
+radiator_height = 120;
+radiator_thickness = 27;
+radiator_fpi = 16;
+
+//fan
+fan_size = 120;
+fan_thickness = 20;
+fan_frame_thickness = 2.5;
+fan_diameter = 115;
+fan_center_diameter = 25;
+fan_blade_count = 9;
+fan_blade_center_size = 5;
+fan_blade_outer_size = 45;
+fan_blade_angle = 25;
+fan_blade_thickness = 1;
+fan_screw_diameter = M4_screw_diameter;
+fan_screw_distance = 5;
