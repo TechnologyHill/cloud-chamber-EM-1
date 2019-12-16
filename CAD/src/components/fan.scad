@@ -1,5 +1,7 @@
 include <../../parameters.scad>
 
+center_side_distance = sqrt( pow(fan_size/2-fan_screw_distance, 2)+pow(fan_size/2-fan_screw_distance, 2) );
+
 module fan() {
     union() {
         intersection() {
@@ -22,19 +24,30 @@ module fan() {
         }
 
         difference() {
-            minkowski() {
-                cube([fan_size-fan_screw_distance*2, fan_size-fan_screw_distance*2, fan_thickness/2], center=true);
-                cylinder(r=fan_screw_distance, h=fan_thickness/2, $fn=50, center=true);
+            union() {
+                minkowski() {
+                    cube([fan_size-fan_screw_distance*2, fan_size-fan_screw_distance*2, fan_thickness/2], center=true);
+                    cylinder(r=fan_screw_distance, h=fan_thickness/2, $fn=50, center=true);
+                }  
             }
 
+
             difference() {
-                cylinder(d=fan_diameter, h=fan_thickness+0.1, $fn=100, center=true);
+                cylinder(d=fan_diameter, h=fan_thickness+0.1, $fn=200, center=true);
                 cylinder(d=fan_center_diameter, h=fan_thickness+0.1, $fn=100, center=true);
             }
 
             difference() {
-                cylinder(d=fan_diameter*3, h=fan_thickness-fan_frame_thickness*2, center=true);
-                cylinder(d=fan_size, h=fan_thickness-fan_frame_thickness, $fn=100, center=true);
+                difference() {
+                    cylinder(d=fan_diameter*3, h=fan_thickness-fan_frame_thickness*2, center=true);
+                    cylinder(d=fan_size, h=fan_thickness-fan_frame_thickness, $fn=300, center=true);
+                }
+
+                rotate([0, 0, 45])
+                        cube([center_side_distance*2, fan_frame_thickness, fan_thickness], center=true);
+
+                rotate([0, 0, 45+90])
+                        cube([center_side_distance*2, fan_frame_thickness, fan_thickness], center=true);
             }
 
             translate([fan_size/2-fan_screw_distance, fan_size/2-fan_screw_distance, 0])
