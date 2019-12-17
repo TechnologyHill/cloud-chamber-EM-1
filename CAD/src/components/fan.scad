@@ -11,15 +11,18 @@ module fan() {
             }
 
             for(i = [0:360/fan_blade_count:360]) {
-                translate([0, 0, 0])
-                    rotate([-fan_blade_angle, 0, i])
-                        hull() {
-                            translate([0, -fan_blade_center_size/2, -fan_blade_thickness/2])
-                            cube([2, fan_blade_center_size, fan_blade_thickness]);
+                rotate([0, 0, i])
+                    translate([0, 0, -6])
+                        rotate([fan_blade_angle, 0, 0])
+                            difference() {
+                                rotate([0, 0, 55])
+                                    translate([fan_diameter/3, 0, 0])
+                                        cylinder(r=50, h=fan_blade_thickness, $fn=200, center=true);
 
-                            translate([fan_size/2, -fan_blade_outer_size/2, -fan_blade_thickness/2])
-                                cube([2, fan_blade_outer_size, fan_blade_thickness]);
-                        }
+                                rotate([0, 0, 40+55])
+                                    translate([fan_diameter/3, 0, 0])
+                                        cylinder(r=45, h=fan_blade_thickness*2, $fn=200, center=true);
+                            }
             }
         }
 

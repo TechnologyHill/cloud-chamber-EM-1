@@ -6,6 +6,80 @@ fins_count = floor(mm_to_inch(fan_size*3)*radiator_fpi);
 fins_height = ((radiator_height-radiator_frame_thickness*2)-(radiator_pipe_thickness*radiator_pipe_count))/(radiator_pipe_count+1);
 
 module radiator() {
+    //mount
+    difference() {
+        union() {
+            translate([radiator_fans_translate+fan_size-radiator_mount_width/2, 0, 0])
+                cube([radiator_mount_width, radiator_thickness, radiator_mount_height]);
+
+            translate([radiator_fans_translate+fan_size*2-radiator_mount_width/2, 0, 0])
+                cube([radiator_mount_width, radiator_thickness, radiator_mount_height]);
+
+            translate([radiator_fans_translate+fan_size-radiator_mount_width/2, 0, radiator_height-radiator_mount_height])
+                cube([radiator_mount_width, radiator_thickness, radiator_mount_height]);
+
+            translate([radiator_fans_translate+fan_size*2-radiator_mount_width/2, 0, radiator_height-radiator_mount_height])
+                cube([radiator_mount_width, radiator_thickness, radiator_mount_height]);
+
+
+            translate([radiator_fans_translate, 0, 0])
+                cube([radiator_mount_width/2, radiator_thickness, radiator_mount_height]);
+
+            translate([radiator_fans_translate, 0, radiator_height-radiator_mount_height])
+                cube([radiator_mount_width/2, radiator_thickness, radiator_mount_height]);
+            
+            translate([radiator_fans_translate+fan_size*3-radiator_mount_width/2, 0, 0])
+                cube([radiator_mount_width/2, radiator_thickness, radiator_mount_height]);
+
+            translate([radiator_fans_translate+fan_size*3-radiator_mount_width/2, 0, radiator_height-radiator_mount_height])
+                cube([radiator_mount_width/2, radiator_thickness, radiator_mount_height]);
+        }
+
+        translate([0, radiator_mount_thickness, -radiator_height/2])
+            cube([radiator_width, radiator_thickness-radiator_mount_thickness*2, radiator_height*2]);
+
+        translate([radiator_fans_translate+fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+
+        translate([radiator_fans_translate+fan_size*3-fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size*3-fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+
+        translate([radiator_fans_translate+fan_size+fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size+fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size-fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size-fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+
+        translate([radiator_fans_translate+fan_size*2+fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size*2+fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size*2-fan_screw_distance, 0, fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+        translate([radiator_fans_translate+fan_size*2-fan_screw_distance, 0, radiator_height-fan_screw_distance])
+            rotate([90, 0, 0])
+                cylinder(d=fan_screw_diameter, h=radiator_thickness*3, center=true, $fn=20);
+    }
+
+    //fins
     union() {
         translate([radiator_width-(radiator_width-(fan_size*3+radiator_fans_translate+radiator_frame_thickness))/2, radiator_frame_thickness, radiator_height/5])
             rotate([90, 0, 0])
@@ -14,7 +88,6 @@ module radiator() {
             rotate([90, 0, 0])
                 fitting();
 
-        //pipes
         translate([radiator_fans_translate, radiator_frame_overhang, radiator_frame_thickness])
         for(i = [1:radiator_pipe_count]) {
             hull() {
@@ -35,6 +108,7 @@ module radiator() {
         }
     }
 
+    //frame
     difference() {
         union() {
             cube([radiator_width, radiator_thickness, radiator_height]);

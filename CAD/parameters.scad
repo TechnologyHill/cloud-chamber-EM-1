@@ -155,17 +155,18 @@ pump_in_out_overlap = 5;
 
 //fan
 fan_size = 120;
-fan_thickness = 20;
+fan_thickness = 25;
 fan_frame_thickness = 2.5;
 fan_diameter = fan_size-2;
 fan_center_diameter = 30;
-fan_blade_count = 9;
+fan_blade_count = 5;
 fan_blade_center_size = 5;
 fan_blade_outer_size = 45;
-fan_blade_angle = 25;
-fan_blade_thickness = 1;
+fan_blade_angle = 23;
+fan_blade_thickness = 0.4;
 fan_screw_diameter = M4_screw_diameter;
 fan_screw_distance = 7;
+fan_rotation = false;
 
 //radiator
 radiator_width = 392;
@@ -176,5 +177,8 @@ radiator_fin_thickness = 0.05;
 radiator_frame_thickness = 2;
 radiator_frame_overhang = 4;
 radiator_fans_translate = 17-fan_screw_distance;
-radiator_pipe_count = 6;
+radiator_pipe_count = 12;
 radiator_pipe_thickness = 2;
+radiator_mount_height = 12;
+radiator_mount_width = 31;
+radiator_mount_thickness = 1;
