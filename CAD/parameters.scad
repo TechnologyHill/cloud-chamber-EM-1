@@ -153,4 +153,4 @@ fan_blade_outer_size = 45;
 fan_blade_angle = 25;
 fan_blade_thickness = 1;
 fan_screw_diameter = M4_screw_diameter;
-fan_screw_distance = 5;
+fan_screw_distance = 7;
