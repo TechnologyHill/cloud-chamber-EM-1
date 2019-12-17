@@ -2,6 +2,12 @@
 //|               CLOUD CHAMBER              |//
 //|==========================================|//
 
+//========== FUNCTIONS ==========//
+
+//unit conversions
+function inch_to_mm(inch) = inch*25.4;
+function mm_to_inch(mm) = mm/25.4;
+
 
 //========== SCREWS ==========//
 
@@ -135,12 +141,6 @@ pump_in_out_inner_diameter = 15;
 pump_in_out_height = 30;
 pump_in_out_overlap = 5;
 
-//radiator
-radiator_width = 392;
-radiator_height = 120;
-radiator_thickness = 27;
-radiator_fpi = 16;
-
 //fan
 fan_size = 120;
 fan_thickness = 20;
@@ -154,3 +154,12 @@ fan_blade_angle = 25;
 fan_blade_thickness = 1;
 fan_screw_diameter = M4_screw_diameter;
 fan_screw_distance = 7;
+
+//radiator
+radiator_width = 392;
+radiator_height = 120;
+radiator_thickness = 27;
+radiator_fpi = 16;
+radiator_frame_thickness = 2;
+radiator_frame_overhang = 5;
+radiator_fans_translate = 17-fan_screw_distance;
