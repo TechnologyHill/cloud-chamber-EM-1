@@ -1,7 +1,6 @@
 include <../../parameters.scad>
 
 
-
 module radiator() {
     difference() {
         union() {
