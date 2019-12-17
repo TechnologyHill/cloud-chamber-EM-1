@@ -2,6 +2,7 @@
 //|               CLOUD CHAMBER              |//
 //|==========================================|//
 
+
 //========== FUNCTIONS ==========//
 
 //unit conversions
@@ -130,14 +131,25 @@ TO92_thickness = 3.9;
 TO92_pins = 14.5;
 TO92_bottom_to_pins = 1;
 
+
 //========== COOLING CIRCUIT ==========//
+
+//fitting
+fitting_thread_diameter = 13.157;
+fitting_thread_height = 4;
+fitting_height = 20;
+fitting_inner_diameter = 8.4;
+fitting_wall_thickness = 0.7;
+fitting_overhang_height = 5;
+fitting_overhang_size = 0.5;
+fitting_nut_diameter = 18;
+fitting_nut_height = 3;
 
 //pump
 pump_diameter = 70;
 pump_height = 135;
 pump_in_out_distance = 40;
-pump_in_out_diameter = 20;
-pump_in_out_inner_diameter = 15;
+pump_in_out_diameter = 25;
 pump_in_out_height = 30;
 pump_in_out_overlap = 5;
 
@@ -146,7 +158,7 @@ fan_size = 120;
 fan_thickness = 20;
 fan_frame_thickness = 2.5;
 fan_diameter = fan_size-2;
-fan_center_diameter = 25;
+fan_center_diameter = 30;
 fan_blade_count = 9;
 fan_blade_center_size = 5;
 fan_blade_outer_size = 45;
@@ -160,6 +172,9 @@ radiator_width = 392;
 radiator_height = 120;
 radiator_thickness = 27;
 radiator_fpi = 16;
+radiator_fin_thickness = 0.05;
 radiator_frame_thickness = 2;
-radiator_frame_overhang = 5;
+radiator_frame_overhang = 4;
 radiator_fans_translate = 17-fan_screw_distance;
+radiator_pipe_count = 6;
+radiator_pipe_thickness = 2;
