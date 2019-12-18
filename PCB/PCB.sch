@@ -1580,4 +1580,132 @@ Wire Notes Line
 	1450 6050 1450 6850
 Text Notes 550  6050 0    50   ~ 10
 Buttons
+$Comp
+L Transistor_FET:IRLZ44N peltier3A
+U 1 1 5DFD1541
+P 10200 4600
+F 0 "peltier3A" H 10406 4646 50  0000 L CNN
+F 1 "IRLR2905" H 10406 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 10450 4525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 10200 4600 50  0001 L CNN
+	1    10200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3A+
+U 1 1 5DFED397
+P 10500 4300
+F 0 "P3A+" H 10580 4342 50  0000 L CNN
+F 1 "WAGO256" H 10580 4251 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 10500 4300 50  0001 C CNN
+F 3 "~" H 10500 4300 50  0001 C CNN
+	1    10500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3A-
+U 1 1 5DFF358D
+P 10500 4900
+F 0 "P3A-" H 10580 4942 50  0000 L CNN
+F 1 "WAGO256" H 10580 4851 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 10500 4900 50  0001 C CNN
+F 3 "~" H 10500 4900 50  0001 C CNN
+	1    10500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E01ED3C
+P 10300 5000
+F 0 "#PWR?" H 10300 4750 50  0001 C CNN
+F 1 "GND" H 10305 4827 50  0000 C CNN
+F 2 "" H 10300 5000 50  0001 C CNN
+F 3 "" H 10300 5000 50  0001 C CNN
+	1    10300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 4800 10300 4900
+Connection ~ 10300 4900
+Wire Wire Line
+	10300 4900 10300 5000
+Wire Wire Line
+	10300 4300 10300 4400
+Wire Wire Line
+	10000 4600 9950 4600
+Wire Wire Line
+	4350 5450 4500 5450
+Text Label 9950 4600 2    50   ~ 0
+P3A
+Text Label 4500 5450 0    50   ~ 0
+P3A
+$Comp
+L Transistor_FET:IRLZ44N peltier3B
+U 1 1 5E0B6BCD
+P 10200 5650
+F 0 "peltier3B" H 10406 5696 50  0000 L CNN
+F 1 "IRLR2905" H 10406 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 10450 5575 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 10200 5650 50  0001 L CNN
+	1    10200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3B+
+U 1 1 5E0B6BD7
+P 10500 5350
+F 0 "P3B+" H 10580 5392 50  0000 L CNN
+F 1 "WAGO256" H 10580 5301 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 10500 5350 50  0001 C CNN
+F 3 "~" H 10500 5350 50  0001 C CNN
+	1    10500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P3B-
+U 1 1 5E0B6BE1
+P 10500 5950
+F 0 "P3B-" H 10580 5992 50  0000 L CNN
+F 1 "WAGO256" H 10580 5901 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 10500 5950 50  0001 C CNN
+F 3 "~" H 10500 5950 50  0001 C CNN
+	1    10500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E0B6BEB
+P 10300 6050
+F 0 "#PWR?" H 10300 5800 50  0001 C CNN
+F 1 "GND" H 10305 5877 50  0000 C CNN
+F 2 "" H 10300 6050 50  0001 C CNN
+F 3 "" H 10300 6050 50  0001 C CNN
+	1    10300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5850 10300 5950
+Connection ~ 10300 5950
+Wire Wire Line
+	10300 5950 10300 6050
+Wire Wire Line
+	10300 5350 10300 5450
+Wire Wire Line
+	10000 5650 9950 5650
+Text Label 9950 5650 2    50   ~ 0
+P3B
+Wire Wire Line
+	4350 5550 4500 5550
+Text Label 4500 5550 0    50   ~ 0
+P3B
+Wire Notes Line
+	9800 6300 9800 4200
+Wire Notes Line
+	9800 4200 10950 4200
+Wire Notes Line
+	10950 4200 10950 6300
+Wire Notes Line
+	9800 6300 10950 6300
+Text Notes 9800 4200 0    50   ~ 10
+3V peltiers
 $EndSCHEMATC
