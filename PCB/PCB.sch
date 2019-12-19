@@ -449,7 +449,7 @@ Text Label 4500 6550 0    50   ~ 0
 fan1
 Text Label 4500 4950 0    50   ~ 0
 fan2
-Text Label 4500 4850 0    50   ~ 0
+Text Label 4500 5050 0    50   ~ 0
 fan3
 Text Notes 9600 600  0    50   ~ 10
 12V power
@@ -542,7 +542,7 @@ Wire Wire Line
 Wire Wire Line
 	4350 4550 4500 4550
 Wire Wire Line
-	4350 4850 4500 4850
+	4350 5050 4500 5050
 Wire Wire Line
 	4350 4950 4500 4950
 Wire Wire Line
@@ -1979,4 +1979,328 @@ Wire Wire Line
 	9850 2650 9850 2800
 Wire Wire Line
 	9850 2800 9900 2800
+$Comp
+L Transistor_FET:IRLZ44N VM2
+U 1 1 5E19810D
+P 8950 4600
+F 0 "VM2" H 9156 4646 50  0000 L CNN
+F 1 "IRLR2905" H 9156 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 9200 4525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 8950 4600 50  0001 L CNN
+	1    8950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 VM2+
+U 1 1 5E198117
+P 9250 4300
+F 0 "VM2+" H 9330 4342 50  0000 L CNN
+F 1 "WAGO256" H 9330 4251 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 4300 50  0001 C CNN
+F 3 "~" H 9250 4300 50  0001 C CNN
+	1    9250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 VM2-
+U 1 1 5E198121
+P 9250 4900
+F 0 "VM2-" H 9330 4942 50  0000 L CNN
+F 1 "WAGO256" H 9330 4851 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 4900 50  0001 C CNN
+F 3 "~" H 9250 4900 50  0001 C CNN
+	1    9250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E19812B
+P 9050 5000
+F 0 "#PWR?" H 9050 4750 50  0001 C CNN
+F 1 "GND" H 9055 4827 50  0000 C CNN
+F 2 "" H 9050 5000 50  0001 C CNN
+F 3 "" H 9050 5000 50  0001 C CNN
+	1    9050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 4800 9050 4900
+Connection ~ 9050 4900
+Wire Wire Line
+	9050 4900 9050 5000
+Wire Wire Line
+	9050 4300 9050 4400
+Text Label 8650 5000 0    50   ~ 0
+VM2
+$Comp
+L Transistor_FET:IRLZ44N VM1
+U 1 1 5E19813A
+P 8950 5650
+F 0 "VM1" H 9156 5696 50  0000 L CNN
+F 1 "IRLR2905" H 9156 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 9200 5575 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 8950 5650 50  0001 L CNN
+	1    8950 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 VM1+
+U 1 1 5E198144
+P 9250 5350
+F 0 "VM1+" H 9330 5392 50  0000 L CNN
+F 1 "WAGO256" H 9330 5301 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 5350 50  0001 C CNN
+F 3 "~" H 9250 5350 50  0001 C CNN
+	1    9250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 VM1-
+U 1 1 5E19814E
+P 9250 5950
+F 0 "VM1-" H 9330 5992 50  0000 L CNN
+F 1 "WAGO256" H 9330 5901 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 5950 50  0001 C CNN
+F 3 "~" H 9250 5950 50  0001 C CNN
+	1    9250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E198158
+P 9050 6050
+F 0 "#PWR?" H 9050 5800 50  0001 C CNN
+F 1 "GND" H 9055 5877 50  0000 C CNN
+F 2 "" H 9050 6050 50  0001 C CNN
+F 3 "" H 9050 6050 50  0001 C CNN
+	1    9050 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5850 9050 5950
+Connection ~ 9050 5950
+Wire Wire Line
+	9050 5950 9050 6050
+Wire Wire Line
+	9050 5350 9050 5450
+Text Label 8650 6050 0    50   ~ 0
+VM1
+Wire Notes Line
+	8500 6300 8500 4200
+Wire Notes Line
+	9700 4200 9700 6300
+Text Notes 8500 4200 0    50   ~ 10
+Vapor maker
+Wire Notes Line
+	8500 6300 9700 6300
+Wire Notes Line
+	8500 4200 9700 4200
+$Comp
+L Device:R_Small R18
+U 1 1 5E19816C
+P 8600 5800
+F 0 "R18" H 8659 5846 50  0000 L CNN
+F 1 "470R" H 8659 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8600 5800 50  0001 C CNN
+F 3 "~" H 8600 5800 50  0001 C CNN
+	1    8600 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5650 8600 5700
+Wire Wire Line
+	8600 5650 8750 5650
+Wire Wire Line
+	8600 5900 8600 6050
+Wire Wire Line
+	8600 6050 8650 6050
+$Comp
+L Device:R_Small R19
+U 1 1 5E19817A
+P 8600 4750
+F 0 "R19" H 8659 4796 50  0000 L CNN
+F 1 "470R" H 8659 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8600 4750 50  0001 C CNN
+F 3 "~" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4600 8600 4650
+Wire Wire Line
+	8600 4600 8750 4600
+Wire Wire Line
+	8600 4850 8600 5000
+Wire Wire Line
+	8600 5000 8650 5000
+Wire Wire Line
+	4350 5950 4500 5950
+Wire Wire Line
+	4350 4650 4500 4650
+Text Label 4500 4650 0    50   ~ 0
+VM1
+Text Label 4500 5950 0    50   ~ 0
+VM2
+$Comp
+L Transistor_FET:IRLZ44N LED
+U 1 1 5E1FE648
+P 8950 2400
+F 0 "LED" H 9156 2446 50  0000 L CNN
+F 1 "IRLR2905" H 9156 2355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 9200 2325 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 8950 2400 50  0001 L CNN
+	1    8950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 LED+
+U 1 1 5E1FE652
+P 9250 2100
+F 0 "LED+" H 9330 2142 50  0000 L CNN
+F 1 "WAGO256" H 9330 2051 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 2100 50  0001 C CNN
+F 3 "~" H 9250 2100 50  0001 C CNN
+	1    9250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 LED-
+U 1 1 5E1FE65C
+P 9250 2700
+F 0 "LED-" H 9330 2742 50  0000 L CNN
+F 1 "WAGO256" H 9330 2651 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 2700 50  0001 C CNN
+F 3 "~" H 9250 2700 50  0001 C CNN
+	1    9250 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1FE666
+P 9050 2800
+F 0 "#PWR?" H 9050 2550 50  0001 C CNN
+F 1 "GND" H 9055 2627 50  0000 C CNN
+F 2 "" H 9050 2800 50  0001 C CNN
+F 3 "" H 9050 2800 50  0001 C CNN
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2600 9050 2700
+Connection ~ 9050 2700
+Wire Wire Line
+	9050 2700 9050 2800
+Wire Wire Line
+	9050 2100 9050 2200
+Text Label 8650 2800 0    50   ~ 0
+LED
+$Comp
+L Transistor_FET:IRLZ44N pump
+U 1 1 5E1FE675
+P 8950 3450
+F 0 "pump" H 9156 3496 50  0000 L CNN
+F 1 "IRLR2905" H 9156 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2_TabPin1" H 9200 3375 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf" H 8950 3450 50  0001 L CNN
+	1    8950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 pump+
+U 1 1 5E1FE67F
+P 9250 3150
+F 0 "pump+" H 9330 3192 50  0000 L CNN
+F 1 "WAGO256" H 9330 3101 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 3150 50  0001 C CNN
+F 3 "~" H 9250 3150 50  0001 C CNN
+	1    9250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 pump-
+U 1 1 5E1FE689
+P 9250 3750
+F 0 "pump-" H 9330 3792 50  0000 L CNN
+F 1 "WAGO256" H 9330 3701 50  0000 L CNN
+F 2 "Mlab_CON:WAGO256" H 9250 3750 50  0001 C CNN
+F 3 "~" H 9250 3750 50  0001 C CNN
+	1    9250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1FE693
+P 9050 3850
+F 0 "#PWR?" H 9050 3600 50  0001 C CNN
+F 1 "GND" H 9055 3677 50  0000 C CNN
+F 2 "" H 9050 3850 50  0001 C CNN
+F 3 "" H 9050 3850 50  0001 C CNN
+	1    9050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3650 9050 3750
+Connection ~ 9050 3750
+Wire Wire Line
+	9050 3750 9050 3850
+Wire Wire Line
+	9050 3150 9050 3250
+Text Label 8650 3850 0    50   ~ 0
+pump
+Wire Notes Line
+	8500 4100 8500 2000
+Wire Notes Line
+	9700 2000 9700 4100
+Text Notes 8500 2000 0    50   ~ 10
+Pump + LED
+Wire Notes Line
+	8500 4100 9700 4100
+Wire Notes Line
+	8500 2000 9700 2000
+$Comp
+L Device:R_Small R20
+U 1 1 5E1FE6A7
+P 8600 3600
+F 0 "R20" H 8659 3646 50  0000 L CNN
+F 1 "470R" H 8659 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8600 3600 50  0001 C CNN
+F 3 "~" H 8600 3600 50  0001 C CNN
+	1    8600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3450 8600 3500
+Wire Wire Line
+	8600 3450 8750 3450
+Wire Wire Line
+	8600 3700 8600 3850
+Wire Wire Line
+	8600 3850 8650 3850
+$Comp
+L Device:R_Small R21
+U 1 1 5E1FE6B5
+P 8600 2550
+F 0 "R21" H 8659 2596 50  0000 L CNN
+F 1 "470R" H 8659 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8600 2550 50  0001 C CNN
+F 3 "~" H 8600 2550 50  0001 C CNN
+	1    8600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2400 8600 2450
+Wire Wire Line
+	8600 2400 8750 2400
+Wire Wire Line
+	8600 2650 8600 2800
+Wire Wire Line
+	8600 2800 8650 2800
+Wire Wire Line
+	4350 6050 4500 6050
+Wire Wire Line
+	4350 6150 4500 6150
+Text Label 4500 6050 0    50   ~ 0
+LED
+Text Label 4500 6150 0    50   ~ 0
+pump
 $EndSCHEMATC
