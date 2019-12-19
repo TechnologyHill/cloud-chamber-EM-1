@@ -134,12 +134,12 @@ IO_0
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5DF14F2C
-P 3750 3900
-F 0 "#PWR0102" H 3750 3750 50  0001 C CNN
-F 1 "+3.3V" H 3765 4073 50  0000 C CNN
-F 2 "" H 3750 3900 50  0001 C CNN
-F 3 "" H 3750 3900 50  0001 C CNN
-	1    3750 3900
+P 4300 3500
+F 0 "#PWR0102" H 4300 3350 50  0001 C CNN
+F 1 "+3.3V" H 4315 3673 50  0000 C CNN
+F 2 "" H 4300 3500 50  0001 C CNN
+F 3 "" H 4300 3500 50  0001 C CNN
+	1    4300 3500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -422,19 +422,6 @@ F 3 "" H 1350 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 2550 1350 2750
-Wire Wire Line
-	850  2700 850  2750
-Wire Wire Line
-	850  2750 1350 2750
-Connection ~ 1350 2750
-Wire Wire Line
-	1350 2750 1350 2800
-Wire Wire Line
-	1850 2700 1850 2750
-Wire Wire Line
-	1850 2750 1350 2750
-Wire Wire Line
 	1650 2250 1850 2250
 Wire Wire Line
 	1850 2250 1850 2400
@@ -582,8 +569,6 @@ F 3 "~" H 4000 750 50  0001 C CNN
 	1    4000 750 
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3750 3900 3750 4050
 Wire Wire Line
 	4500 1900 4650 1900
 Wire Wire Line
@@ -1632,10 +1617,8 @@ Wire Wire Line
 Wire Wire Line
 	10300 4300 10300 4400
 Wire Wire Line
-	10000 4600 9950 4600
-Wire Wire Line
 	4350 5450 4500 5450
-Text Label 9950 4600 2    50   ~ 0
+Text Label 9900 5000 0    50   ~ 0
 P3A
 Text Label 4500 5450 0    50   ~ 0
 P3A
@@ -1690,9 +1673,7 @@ Wire Wire Line
 	10300 5950 10300 6050
 Wire Wire Line
 	10300 5350 10300 5450
-Wire Wire Line
-	10000 5650 9950 5650
-Text Label 9950 5650 2    50   ~ 0
+Text Label 9900 6050 0    50   ~ 0
 P3B
 Wire Wire Line
 	4350 5550 4500 5550
@@ -1755,9 +1736,7 @@ Wire Wire Line
 	10300 2700 10300 2800
 Wire Wire Line
 	10300 2100 10300 2200
-Wire Wire Line
-	10000 2400 9950 2400
-Text Label 9950 2400 2    50   ~ 0
+Text Label 9900 2800 0    50   ~ 0
 P12A
 $Comp
 L Transistor_FET:IRLZ44N peltier12B
@@ -1810,9 +1789,7 @@ Wire Wire Line
 	10300 3750 10300 3850
 Wire Wire Line
 	10300 3150 10300 3250
-Wire Wire Line
-	10000 3450 9950 3450
-Text Label 9950 3450 2    50   ~ 0
+Text Label 9900 3850 0    50   ~ 0
 P12B
 Wire Notes Line
 	9750 4100 9750 2000
@@ -1836,4 +1813,170 @@ Text Label 4500 5650 0    50   ~ 0
 P12A
 Text Label 4500 5750 0    50   ~ 0
 P12B
+$Comp
+L Device:C_Small C8
+U 1 1 5DFC79AB
+P 3900 3750
+F 0 "C8" H 3992 3796 50  0000 L CNN
+F 1 "100nF" H 3992 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3900 3750 50  0001 C CNN
+F 3 "~" H 3900 3750 50  0001 C CNN
+	1    3900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5DFD44CB
+P 4300 3750
+F 0 "C9" H 4392 3796 50  0000 L CNN
+F 1 "10uF" H 4392 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4300 3750 50  0001 C CNN
+F 3 "~" H 4300 3750 50  0001 C CNN
+	1    4300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFD4BDC
+P 3900 3900
+F 0 "#PWR?" H 3900 3650 50  0001 C CNN
+F 1 "GND" H 3905 3727 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DFD4D13
+P 4300 3900
+F 0 "#PWR?" H 4300 3650 50  0001 C CNN
+F 1 "GND" H 4305 3727 50  0000 C CNN
+F 2 "" H 4300 3900 50  0001 C CNN
+F 3 "" H 4300 3900 50  0001 C CNN
+	1    4300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3850 4300 3900
+Wire Wire Line
+	3900 3850 3900 3900
+Wire Wire Line
+	4300 3650 4300 3600
+Wire Wire Line
+	3750 3600 3900 3600
+Wire Wire Line
+	3750 3600 3750 4050
+Connection ~ 4300 3600
+Wire Wire Line
+	4300 3600 4300 3500
+Wire Wire Line
+	3900 3650 3900 3600
+Connection ~ 3900 3600
+Wire Wire Line
+	3900 3600 4300 3600
+Wire Wire Line
+	1350 2550 1350 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5E07611D
+P 850 2800
+F 0 "#PWR?" H 850 2550 50  0001 C CNN
+F 1 "GND" H 855 2627 50  0000 C CNN
+F 2 "" H 850 2800 50  0001 C CNN
+F 3 "" H 850 2800 50  0001 C CNN
+	1    850  2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E076579
+P 1850 2800
+F 0 "#PWR?" H 1850 2550 50  0001 C CNN
+F 1 "GND" H 1855 2627 50  0000 C CNN
+F 2 "" H 1850 2800 50  0001 C CNN
+F 3 "" H 1850 2800 50  0001 C CNN
+	1    1850 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 2700 1850 2800
+Wire Wire Line
+	850  2700 850  2800
+$Comp
+L Device:R_Small R14
+U 1 1 5E0B9D33
+P 9850 5800
+F 0 "R14" H 9909 5846 50  0000 L CNN
+F 1 "470R" H 9909 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 5800 50  0001 C CNN
+F 3 "~" H 9850 5800 50  0001 C CNN
+	1    9850 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 5650 9850 5700
+Wire Wire Line
+	9850 5650 10000 5650
+Wire Wire Line
+	9850 5900 9850 6050
+Wire Wire Line
+	9850 6050 9900 6050
+$Comp
+L Device:R_Small R15
+U 1 1 5E0E1A3F
+P 9850 4750
+F 0 "R15" H 9909 4796 50  0000 L CNN
+F 1 "470R" H 9909 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 4750 50  0001 C CNN
+F 3 "~" H 9850 4750 50  0001 C CNN
+	1    9850 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 4600 9850 4650
+Wire Wire Line
+	9850 4600 10000 4600
+Wire Wire Line
+	9850 4850 9850 5000
+Wire Wire Line
+	9850 5000 9900 5000
+$Comp
+L Device:R_Small R16
+U 1 1 5E10298F
+P 9850 3600
+F 0 "R16" H 9909 3646 50  0000 L CNN
+F 1 "470R" H 9909 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 3600 50  0001 C CNN
+F 3 "~" H 9850 3600 50  0001 C CNN
+	1    9850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R17
+U 1 1 5E105133
+P 9850 2550
+F 0 "R17" H 9909 2596 50  0000 L CNN
+F 1 "470R" H 9909 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9850 2550 50  0001 C CNN
+F 3 "~" H 9850 2550 50  0001 C CNN
+	1    9850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3450 9850 3500
+Wire Wire Line
+	9850 3450 10000 3450
+Wire Wire Line
+	9850 2400 9850 2450
+Wire Wire Line
+	9850 2400 10000 2400
+Wire Wire Line
+	9900 3850 9850 3850
+Wire Wire Line
+	9850 3850 9850 3700
+Wire Wire Line
+	9850 2650 9850 2800
+Wire Wire Line
+	9850 2800 9900 2800
 $EndSCHEMATC
