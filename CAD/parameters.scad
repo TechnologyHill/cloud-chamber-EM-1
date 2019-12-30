@@ -169,9 +169,9 @@ pump_tank_furrow_deepth = 2;
 //fan
 fan_size = 120;
 fan_thickness = 25;
-fan_frame_thickness = 2.5;
+fan_frame_thickness = 5;
 fan_diameter = fan_size-2;
-fan_center_diameter = 30;
+fan_center_diameter = 35;
 fan_blade_count = 5;
 fan_blade_center_size = 5;
 fan_blade_outer_size = 45;

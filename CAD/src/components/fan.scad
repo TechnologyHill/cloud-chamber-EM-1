@@ -47,10 +47,10 @@ module fan() {
                 }
 
                 rotate([0, 0, 45])
-                        cube([center_side_distance*2, fan_frame_thickness, fan_thickness], center=true);
+                        cube([center_side_distance*2-fan_screw_diameter, fan_frame_thickness, fan_thickness], center=true);
 
                 rotate([0, 0, 45+90])
-                        cube([center_side_distance*2, fan_frame_thickness, fan_thickness], center=true);
+                        cube([center_side_distance*2-fan_screw_diameter, fan_frame_thickness, fan_thickness], center=true);
             }
 
             translate([fan_size/2-fan_screw_distance, fan_size/2-fan_screw_distance, 0])
