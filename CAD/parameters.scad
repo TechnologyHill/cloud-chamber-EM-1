@@ -137,13 +137,14 @@ TO92_bottom_to_pins = 1;
 //fitting
 fitting_thread_diameter = 13.157;
 fitting_thread_height = 4;
-fitting_height = 20;
+fitting_height = 9.5;
 fitting_inner_diameter = 8.4;
-fitting_wall_thickness = 0.7;
+fitting_wall_thickness = 0.8;
 fitting_overhang_height = 5;
-fitting_overhang_size = 0.5;
+fitting_overhang_size = 1;
 fitting_nut_diameter = 18;
 fitting_nut_height = 3;
+fitting_seal_thickness = 0.8;
 
 //pump
 pump_diameter = 70;
