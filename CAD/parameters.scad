@@ -189,6 +189,7 @@ radiator_fpi = 16;
 radiator_fin_thickness = 0.05;
 radiator_frame_thickness = 2;
 radiator_frame_overhang = 4;
+radiator_frame_radius = 10;
 radiator_fans_translate = 17-fan_screw_distance;
 radiator_pipe_count = 12;
 radiator_pipe_thickness = 2;

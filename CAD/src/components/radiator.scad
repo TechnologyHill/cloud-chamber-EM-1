@@ -114,6 +114,34 @@ module radiator() {
             cube([radiator_width, radiator_thickness, radiator_height]);
         }
 
+        translate([radiator_width-radiator_frame_radius, 0, radiator_height-radiator_frame_radius])
+        difference() {
+            intersection() {
+                cube([radiator_frame_radius*10, radiator_thickness, radiator_frame_radius*10]);
+                rotate([-90, 0, 0])
+                    cylinder(r=radiator_frame_radius*10, h=radiator_thickness);
+            }
+            intersection() {
+                cube([radiator_frame_radius, radiator_thickness, radiator_frame_radius]);
+                rotate([-90, 0, 0])
+                    cylinder(r=radiator_frame_radius, h=radiator_thickness, $fn=100);
+            }
+        }
+        translate([radiator_width-radiator_frame_radius, 0, radiator_frame_radius])
+        rotate([0, 90, 0])
+        difference() {
+            intersection() {
+                cube([radiator_frame_radius*10, radiator_thickness, radiator_frame_radius*10]);
+                rotate([-90, 0, 0])
+                    cylinder(r=radiator_frame_radius*10, h=radiator_thickness);
+            }
+            intersection() {
+                cube([radiator_frame_radius, radiator_thickness, radiator_frame_radius]);
+                rotate([-90, 0, 0])
+                    cylinder(r=radiator_frame_radius, h=radiator_thickness, $fn=100);
+            }
+        }
+
         translate([radiator_width-(radiator_width-(fan_size*3+radiator_fans_translate+radiator_frame_thickness))/2, radiator_thickness/2, radiator_height/5])
             rotate([90, 0, 0])
                 cylinder(d=fitting_thread_diameter, h=100, $fn=50);
