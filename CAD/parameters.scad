@@ -137,8 +137,10 @@ TO92_bottom_to_pins = 1;
 //fitting
 fitting_thread_diameter = 13.157;
 fitting_thread_height = 4;
-fitting_height = 9.5;
+fitting_height = 14.5;
 fitting_inner_diameter = 8.4;
+fitting_bottom_inner_diameter = 10;
+fitting_bottom_inner_height = 6;
 fitting_wall_thickness = 0.8;
 fitting_overhang_height = 5;
 fitting_overhang_size = 1;
