@@ -62,12 +62,3 @@ translate([0, 0, chamber_height]) {
             ALU_profile(size = ALU30_size, height = chamber_width);
     }
 }
-
-
-translate([-chamber_width/2, peltier_size_x/2+ALU20_size/2, chamber_height-ALU30_size/2-ALU20_size/2])
-    rotate([0, 90, 0])
-        ALU_profile(size = ALU20_size, height = chamber_width);
-
-translate([-chamber_width/2, -peltier_size_x/2-ALU20_size/2, chamber_height-ALU30_size/2-ALU20_size/2])
-    rotate([0, 90, 0])
-        ALU_profile(size = ALU20_size, height = chamber_width);
