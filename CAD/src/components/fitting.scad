@@ -1,7 +1,7 @@
 include <../../parameters.scad>
 
 module fitting() {
-    //translate([0, 0, fitting_seal_thickness])
+    translate([0, 0, fitting_seal_thickness])
     difference() {
         union() {
             translate([0, 0, -fitting_thread_height])

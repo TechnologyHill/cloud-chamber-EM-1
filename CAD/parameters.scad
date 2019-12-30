@@ -151,10 +151,20 @@ fitting_seal_thickness = 0.8;
 //pump
 pump_diameter = 70;
 pump_height = 135;
-pump_in_out_distance = 40;
-pump_in_out_diameter = 25;
-pump_in_out_height = 30;
-pump_in_out_overlap = 5;
+pump_in_out_distance = 35;
+pump_in_out_diameter = 20;
+pump_in_out_height = 40;
+pump_in_out_overlap = 2;
+pump_cap_diameter = 16;
+pump_cap_height = 2;
+pump_cap_distance = 30;
+pump_cap_inbus_diameter = 7;
+pump_cap_inbus_height = 5;
+pump_cap_angle = 35;
+pump_tank_height = 60;
+pump_tank_top_distance = 16;
+pump_tank_furrow_height = 0.5;
+pump_tank_furrow_deepth = 2;
 
 //fan
 fan_size = 120;
