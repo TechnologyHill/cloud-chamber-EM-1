@@ -1,11 +1,13 @@
 **background color:**
 
 ```
+HEX
 #383E42  (grey)
 ```
 
 **logo color:**
 
 ```
-#279301   (green)
+HEX
+#6DB055   (green)
 ```
