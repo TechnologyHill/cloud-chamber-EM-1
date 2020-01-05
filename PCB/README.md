@@ -1,12 +1,7 @@
-# Based on ESP32-WROOM-32
+# ESP32 Control Board
+**E32CB_R2**
 
-We use [KiCad](http://www.kicad-pcb.org) to create PCB layout
+![image](doc/PCB_top.png "Top view of PCB")
 
-### Top view
-
-![image](doc/PCB_top.png)
-
-
-### Bottom view
-
-![image](doc/PCB_bottom.png)
+This PCB is fully compatible with [MLAB](https://github.com/MLAB-project/Modules).
+You need to download [MLAB footprints](https://github.com/MLAB-project/kicad-mlab).
