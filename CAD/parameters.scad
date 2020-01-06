@@ -90,26 +90,6 @@ peltier_size_y = 40;
 peltier_thickness = 2.9;
 peltier_cable_diameter = 4;
 
-//water ALU block
-water_block_width = 40;
-water_block_length = 120;
-water_block_thickness = 12.5;
-
-//hose
-hose_outer_diameter = 10;
-hose_inner_diameter = 8;
-
-//nextion display 2.8"
-nextion_board_width = 85;
-nextion_board_height = 50;
-nextion_board_thickness = 1.6;
-nextion_display_width = 69.5;
-nextion_display_height = 50;
-nextion_thickness = 7;
-nextion_screw_diameter = M2_5_screw_diameter;
-nextion_screw_width_distance = 78.5;
-nextion_screw_height_distance = 49;
-
 
 //========== ALU PROFILES ==========//
 
@@ -131,8 +111,28 @@ TO92_thickness = 3.9;
 TO92_pins = 14.5;
 TO92_bottom_to_pins = 1;
 
+//nextion display 2.8"
+nextion_board_width = 85;
+nextion_board_height = 50;
+nextion_board_thickness = 1.6;
+nextion_display_width = 69.5;
+nextion_display_height = 50;
+nextion_thickness = 7;
+nextion_screw_diameter = M2_5_screw_diameter;
+nextion_screw_width_distance = 78.5;
+nextion_screw_height_distance = 49;
+
 
 //========== COOLING CIRCUIT ==========//
+
+//water ALU block
+water_block_width = 40;
+water_block_length = 120;
+water_block_thickness = 12.5;
+
+//hose
+hose_outer_diameter = 10;
+hose_inner_diameter = 8;
 
 //fitting
 fitting_thread_diameter = 13.157;
