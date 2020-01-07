@@ -1,13 +1,13 @@
 include <../parameters.scad>
 
-bottom_thickness = 3.5;
+bottom_thickness = 1001_P_bk_bottom_thickness;
 border_thickness = 2;
 border_height = water_block_thickness+peltier_thickness*2+2;
 border_corner_size = 10;
 copper_plate_support = 2;
 water_block_tolerance = 0.5;
 
-module 1001_Pbk(peltiers=false) {
+module 1001_P_bk(peltiers=false) {
     if(peltiers==true) {
         translate([0, 0, bottom_thickness+water_block_thickness/2])
             #cube([water_block_length, water_block_width, water_block_thickness], center=true);
@@ -80,4 +80,4 @@ module 1001_Pbk(peltiers=false) {
     }
 }
 
-1001_Pbk();
+1001_P_bk();

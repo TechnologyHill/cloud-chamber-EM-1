@@ -196,3 +196,9 @@ radiator_pipe_thickness = 2;
 radiator_mount_height = 12;
 radiator_mount_width = 31;
 radiator_mount_thickness = 1;
+
+
+//========== MODELS ==========//
+
+//1001_P_bk
+1001_P_bk_bottom_thickness = 3.5;
