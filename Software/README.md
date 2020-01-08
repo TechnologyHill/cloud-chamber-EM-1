@@ -1,3 +1,1 @@
-### All software is coded in [*MicroPython*](https://micropython.org).
-
-**We use NEXTION screen**
+**Software for monitoring temperatures in chamber**
