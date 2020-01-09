@@ -839,104 +839,6 @@ Text Label 6300 4150 0    50   ~ 0
 U2_RXD
 Text Label 6300 4250 0    50   ~ 0
 U2_TXD
-$Comp
-L power:GND #PWR012
-U 1 1 5E003164
-P 1600 5100
-F 0 "#PWR012" H 1600 4850 50  0001 C CNN
-F 1 "GND" H 1605 4927 50  0000 C CNN
-F 2 "" H 1600 5100 50  0001 C CNN
-F 3 "" H 1600 5100 50  0001 C CNN
-	1    1600 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR09
-U 1 1 5E00356C
-P 1100 5100
-F 0 "#PWR09" H 1100 4850 50  0001 C CNN
-F 1 "GND" H 1105 4927 50  0000 C CNN
-F 2 "" H 1100 5100 50  0001 C CNN
-F 3 "" H 1100 5100 50  0001 C CNN
-	1    1100 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR011
-U 1 1 5E00396F
-P 1350 5700
-F 0 "#PWR011" H 1350 5550 50  0001 C CNN
-F 1 "+3.3V" H 1350 5850 50  0000 C CNN
-F 2 "" H 1350 5700 50  0001 C CNN
-F 3 "" H 1350 5700 50  0001 C CNN
-	1    1350 5700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1550 5000 1550 5050
-Wire Wire Line
-	1550 5050 1600 5050
-Wire Wire Line
-	1600 5050 1600 5100
-Wire Wire Line
-	1150 5000 1150 5050
-Wire Wire Line
-	1150 5050 1100 5050
-Wire Wire Line
-	1100 5050 1100 5100
-$Comp
-L Device:R_Small R3
-U 1 1 5E00FA72
-P 1450 5550
-F 0 "R3" V 1550 5450 50  0000 L CNN
-F 1 "1k2" V 1350 5450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1450 5550 50  0001 C CNN
-F 3 "~" H 1450 5550 50  0001 C CNN
-	1    1450 5550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 5E01965D
-P 1250 5550
-F 0 "R2" V 1150 5500 50  0000 C CNN
-F 1 "1k2" V 1350 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1250 5550 50  0001 C CNN
-F 3 "~" H 1250 5550 50  0001 C CNN
-	1    1250 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 5700 1350 5550
-Connection ~ 1350 5550
-Wire Wire Line
-	1350 5000 1350 5550
-Wire Wire Line
-	1250 5000 1250 5350
-Wire Wire Line
-	1250 5350 1150 5350
-Wire Wire Line
-	1150 5350 1150 5550
-Wire Wire Line
-	1450 5000 1450 5350
-Wire Wire Line
-	1450 5350 1550 5350
-Wire Wire Line
-	1550 5350 1550 5550
-Connection ~ 1150 5550
-Wire Wire Line
-	1550 5550 1650 5550
-Connection ~ 1550 5550
-Text Label 1650 5550 0    50   ~ 0
-I2C_SCL
-Text Label 800  5550 0    50   ~ 0
-I2C_SDA
-Wire Wire Line
-	800  5550 1150 5550
-Wire Notes Line
-	750  4550 2000 4550
-Wire Notes Line
-	2000 5900 750  5900
 Text Notes 750  4550 0    50   ~ 10
 I2C
 $Comp
@@ -1023,17 +925,6 @@ F 3 "" H 1050 7300 50  0001 C CNN
 $EndComp
 Text Label 1200 7150 0    50   ~ 0
 OneWire
-$Comp
-L Device:R_Small R1
-U 1 1 5E3396A0
-P 900 7250
-F 0 "R1" V 900 7200 50  0000 L CNN
-F 1 "4k7" V 800 7200 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 900 7250 50  0001 C CNN
-F 3 "~" H 900 7250 50  0001 C CNN
-	1    900  7250
-	0    -1   -1   0   
-$EndComp
 Text Notes 750  6350 0    50   ~ 10
 OneWire
 Wire Wire Line
@@ -1041,23 +932,11 @@ Wire Wire Line
 Wire Wire Line
 	1250 6800 1250 6850
 Wire Wire Line
-	1050 6800 1050 7250
-Wire Wire Line
-	1000 7250 1050 7250
-Connection ~ 1050 7250
-Wire Wire Line
-	1050 7250 1050 7300
-Wire Wire Line
-	800  7250 800  7150
-Wire Wire Line
-	800  7150 950  7150
-Wire Wire Line
 	950  7150 950  6800
 Wire Wire Line
 	1150 6800 1150 7150
 Wire Wire Line
 	1150 7150 950  7150
-Connection ~ 950  7150
 Wire Wire Line
 	1150 7150 1200 7150
 Connection ~ 1150 7150
@@ -2173,21 +2052,6 @@ Wire Notes Line
 Wire Notes Line
 	750  6350 750  7550
 $Comp
-L MLAB_HEADER:HEADER_2x05_PARALLEL J20
-U 1 1 5EFEB3E6
-P 1350 4750
-F 0 "J20" V 1373 4472 60  0001 R CNN
-F 1 "I2C" V 1500 4950 60  0000 R CNN
-F 2 "Mlab_Pin_Headers:Straight_2x05" V 1161 4472 60  0001 R CNN
-F 3 "" H 1350 4950 60  0001 C CNN
-	1    1350 4750
-	0    -1   -1   0   
-$EndComp
-Wire Notes Line
-	2000 4550 2000 5900
-Wire Notes Line
-	750  4550 750  5900
-$Comp
 L MLAB_HEADER:HEADER_1x04 J17
 U 1 1 5F03F757
 P 3250 7000
@@ -2302,5 +2166,120 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8888 2950 50  
 F 3 "~" H 8850 3100 50  0001 C CNN
 	1    8850 3100
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 6800 1050 7300
+Wire Notes Line
+	750  4550 750  5900
+Wire Notes Line
+	2000 5900 750  5900
+Wire Notes Line
+	750  4550 2000 4550
+Wire Notes Line
+	2000 4550 2000 5900
+$Comp
+L MLAB_HEADER:HEADER_2x05_PARALLEL J20
+U 1 1 5EFEB3E6
+P 1350 4750
+F 0 "J20" V 1373 4472 60  0001 R CNN
+F 1 "I2C" V 1500 4950 60  0000 R CNN
+F 2 "Mlab_Pin_Headers:Straight_2x05" V 1161 4472 60  0001 R CNN
+F 3 "" H 1350 4950 60  0001 C CNN
+	1    1350 4750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1100 5050 1100 5100
+Wire Wire Line
+	1150 5050 1100 5050
+Wire Wire Line
+	1150 5000 1150 5050
+Wire Wire Line
+	1600 5050 1600 5100
+Wire Wire Line
+	1550 5050 1600 5050
+Wire Wire Line
+	1550 5000 1550 5050
+$Comp
+L power:GND #PWR09
+U 1 1 5E00356C
+P 1100 5100
+F 0 "#PWR09" H 1100 4850 50  0001 C CNN
+F 1 "GND" H 1105 4927 50  0000 C CNN
+F 2 "" H 1100 5100 50  0001 C CNN
+F 3 "" H 1100 5100 50  0001 C CNN
+	1    1100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E003164
+P 1600 5100
+F 0 "#PWR012" H 1600 4850 50  0001 C CNN
+F 1 "GND" H 1605 4927 50  0000 C CNN
+F 2 "" H 1600 5100 50  0001 C CNN
+F 3 "" H 1600 5100 50  0001 C CNN
+	1    1600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5E00396F
+P 1350 5700
+F 0 "#PWR011" H 1350 5550 50  0001 C CNN
+F 1 "+3.3V" H 1350 5850 50  0000 C CNN
+F 2 "" H 1350 5700 50  0001 C CNN
+F 3 "" H 1350 5700 50  0001 C CNN
+	1    1350 5700
+	-1   0    0    1   
+$EndComp
+Text Label 800  5550 0    50   ~ 0
+I2C_SDA
+Text Label 1650 5550 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	800  5550 1150 5550
+Wire Wire Line
+	1250 5000 1250 5350
+Wire Wire Line
+	1550 5550 1650 5550
+Wire Wire Line
+	1450 5000 1450 5350
+Wire Wire Line
+	1450 5350 1550 5350
+Wire Wire Line
+	1550 5350 1550 5550
+Wire Wire Line
+	1250 5350 1150 5350
+Wire Wire Line
+	1150 5350 1150 5550
+Connection ~ 1550 5550
+Wire Wire Line
+	1350 5000 1350 5550
+Wire Wire Line
+	1350 5700 1350 5550
+Connection ~ 1350 5550
+$Comp
+L Device:R_Small R3
+U 1 1 5E00FA72
+P 1450 5550
+F 0 "R3" V 1550 5450 50  0000 L CNN
+F 1 "1k2" V 1350 5450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1450 5550 50  0001 C CNN
+F 3 "~" H 1450 5550 50  0001 C CNN
+	1    1450 5550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1150 5550
+$Comp
+L Device:R_Small R2
+U 1 1 5E01965D
+P 1250 5550
+F 0 "R2" V 1150 5500 50  0000 C CNN
+F 1 "1k2" V 1350 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1250 5550 50  0001 C CNN
+F 3 "~" H 1250 5550 50  0001 C CNN
+	1    1250 5550
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
