@@ -1,11 +1,20 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.5-52549c5~84~ubuntu18.04.1*
+<<<<<<< HEAD:PCB/E32CB_R2/gerber/E32CB_R2-Edge_Cuts.gbr
 G04 #@! TF.CreationDate,2020-01-10T14:24:23+01:00*
 G04 #@! TF.ProjectId,E32CB_R2,45333243-425f-4523-922e-6b696361645f,rev?*
+=======
+G04 #@! TF.CreationDate,2020-01-05T10:41:32+01:00*
+G04 #@! TF.ProjectId,PCB,5043422e-6b69-4636-9164-5f7063625858,rev?*
+>>>>>>> master:PCB/gerber/PCB-Edge_Cuts.gbr
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Profile,NP*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+<<<<<<< HEAD:PCB/E32CB_R2/gerber/E32CB_R2-Edge_Cuts.gbr
 G04 Created by KiCad (PCBNEW 5.1.5-52549c5~84~ubuntu18.04.1) date 2020-01-10 14:24:23*
+=======
+G04 Created by KiCad (PCBNEW 5.1.5-52549c5~84~ubuntu18.04.1) date 2020-01-05 10:41:32*
+>>>>>>> master:PCB/gerber/PCB-Edge_Cuts.gbr
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
