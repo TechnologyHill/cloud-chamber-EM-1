@@ -196,7 +196,7 @@ Connection ~ 7850 2800
 Wire Wire Line
 	7500 2800 7450 2800
 $Comp
-L Device:C C7
+L Device:C_Small C7
 U 1 1 5DF1AC2C
 P 7850 3100
 F 0 "C7" H 7700 3200 50  0000 L CNN
@@ -231,15 +231,7 @@ $EndComp
 Wire Wire Line
 	8350 3100 8350 3350
 Wire Wire Line
-	7850 3250 7850 3350
-Wire Wire Line
-	7850 2950 7850 2800
-Wire Wire Line
-	8850 3350 8850 3250
-Wire Wire Line
 	8650 2800 8850 2800
-Wire Wire Line
-	8850 2800 8850 2950
 $Comp
 L power:+3V3 #PWR045
 U 1 1 5DF245BF
@@ -361,7 +353,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L Device:C_Small C6
 U 1 1 5DEFEA91
 P 7650 1550
 F 0 "C6" H 7765 1596 50  0000 L CNN
@@ -372,7 +364,7 @@ F 3 "~" H 7650 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L Device:C_Small C8
 U 1 1 5DF004CD
 P 8650 1550
 F 0 "C8" H 8765 1596 50  0000 L CNN
@@ -396,11 +388,7 @@ $EndComp
 Wire Wire Line
 	8450 1250 8650 1250
 Wire Wire Line
-	8650 1250 8650 1400
-Wire Wire Line
 	7850 1250 7650 1250
-Wire Wire Line
-	7650 1250 7650 1400
 $Comp
 L power:+12V #PWR035
 U 1 1 5DF0D536
@@ -985,10 +973,10 @@ Wire Notes Line
 Wire Notes Line
 	11000 900  11000 1350
 $Comp
-L Device:LED LED_R
+L Device:LED LED_R1
 U 1 1 5E04BA83
 P 3500 3800
-F 0 "LED_R" H 3493 3545 50  0000 C CNN
+F 0 "LED_R1" H 3493 3545 50  0000 C CNN
 F 1 "RXD" H 3493 3636 50  0000 C CNN
 F 2 "Mlab_D:LED_1206" H 3500 3800 50  0001 C CNN
 F 3 "~" H 3500 3800 50  0001 C CNN
@@ -1029,10 +1017,10 @@ F 3 "~" H 3150 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED LED_R
+L Device:LED LED_R2
 U 1 1 5E062710
 P 3500 4150
-F 0 "LED_R" H 3500 3900 50  0000 C CNN
+F 0 "LED_R2" H 3500 3900 50  0000 C CNN
 F 1 "TXD" H 3493 3986 50  0000 C CNN
 F 2 "Mlab_D:LED_1206" H 3500 4150 50  0001 C CNN
 F 3 "~" H 3500 4150 50  0001 C CNN
@@ -1061,10 +1049,10 @@ RXD
 Text Label 3800 4150 0    50   ~ 0
 TXD
 $Comp
-L Device:LED LED_R
+L Device:LED LED_R3
 U 1 1 5E08E5BB
 P 3500 4550
-F 0 "LED_R" H 3500 4300 50  0000 C CNN
+F 0 "LED_R3" H 3500 4300 50  0000 C CNN
 F 1 "Power" H 3493 4386 50  0000 C CNN
 F 2 "Mlab_D:LED_1206" H 3500 4550 50  0001 C CNN
 F 3 "~" H 3500 4550 50  0001 C CNN
@@ -1072,10 +1060,10 @@ F 3 "~" H 3500 4550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED LED_R
+L Device:LED LED_R4
 U 1 1 5E08F438
 P 3500 4950
-F 0 "LED_R" H 3500 4700 50  0000 C CNN
+F 0 "LED_R4" H 3500 4700 50  0000 C CNN
 F 1 "Signal" H 3493 4786 50  0000 C CNN
 F 2 "Mlab_D:LED_1206" H 3500 4950 50  0001 C CNN
 F 3 "~" H 3500 4950 50  0001 C CNN
@@ -1305,10 +1293,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 5850 3750 5850
 $Comp
-L Switch:SW_Push sw_push
+L Switch:SW_Push sw_push1
 U 1 1 5E140153
 P 3450 5850
-F 0 "sw_push" H 3450 6043 50  0001 C CNN
+F 0 "sw_push1" H 3450 6043 50  0001 C CNN
 F 1 "RESET" H 3450 6044 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 3450 6050 50  0001 C CNN
 F 3 "~" H 3450 6050 50  0001 C CNN
@@ -1333,10 +1321,10 @@ Wire Wire Line
 Wire Wire Line
 	3650 6150 3750 6150
 $Comp
-L Switch:SW_Push sw_push
+L Switch:SW_Push sw_push2
 U 1 1 5E1870C9
 P 3450 6150
-F 0 "sw_push" H 3450 6343 50  0001 C CNN
+F 0 "sw_push2" H 3450 6343 50  0001 C CNN
 F 1 "MODE" H 3450 6344 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h4.3mm" H 3450 6350 50  0001 C CNN
 F 3 "~" H 3450 6350 50  0001 C CNN
@@ -1639,10 +1627,6 @@ F 3 "" H 8650 1800 50  0001 C CNN
 	1    8650 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8650 1700 8650 1800
-Wire Wire Line
-	7650 1700 7650 1800
 $Comp
 L Device:R_Small R19
 U 1 1 5E0B9D33
@@ -2157,7 +2141,7 @@ $EndComp
 Wire Wire Line
 	8050 2800 7850 2800
 $Comp
-L Device:C C9
+L Device:C_Small C9
 U 1 1 5E1CB6EF
 P 8850 3100
 F 0 "C9" H 8965 3146 50  0000 L CNN
@@ -2282,4 +2266,20 @@ F 3 "~" H 1250 5550 50  0001 C CNN
 	1    1250 5550
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7650 1250 7650 1450
+Wire Wire Line
+	7650 1650 7650 1800
+Wire Wire Line
+	8650 1250 8650 1450
+Wire Wire Line
+	8650 1650 8650 1800
+Wire Wire Line
+	7850 2800 7850 3000
+Wire Wire Line
+	7850 3200 7850 3350
+Wire Wire Line
+	8850 3200 8850 3350
+Wire Wire Line
+	8850 2800 8850 3000
 $EndSCHEMATC
