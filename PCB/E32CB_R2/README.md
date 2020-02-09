@@ -1,6 +1,6 @@
 # ESP32 Control Board
 **E32CB_R2**
 
-top view of PCB
+KiCad render of PCB
 
-![image](doc/E32CB_R2_top.png "top view of PCB")
+![image](doc/E32CB_R2_render_top.png "render of PCB")
