@@ -1,1 +1,0 @@
-**Software for monitoring temperatures in chamber**
