@@ -9,6 +9,6 @@ roms = ds.scan()
 while True:
     ds.convert_temp()
     for rom in roms:
-        print(ds.read_temp(rom), end=',')
+        print(ds.read_temp(rom), end=';')
     print()
-    time.sleep_ms(1000)
+    time.sleep_ms(600)
