@@ -17,7 +17,7 @@ esp = serial.Serial(argv[1] , 115200)
 
 time.sleep(1)
 
-print "start reading data\n"
+print "start logging data into " + log_file + "\n"
 
 
 while True:
@@ -31,7 +31,7 @@ while True:
 				for i in range(len(data.split(';'))-1):
 					row_string += "temp" + str(i+1) + ';'
 
-				lf.write(row_string += "\n")
+				lf.write(row_string + '\n')
 				first_row = True					
 
 			delta_time = int(round(timedelta.total_seconds(datetime.now() - start_time)))
