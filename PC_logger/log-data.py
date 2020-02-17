@@ -1,10 +1,11 @@
 #!/usr/bin/python
 
-#program for logging data from USB to given csv file
-#
-#created by ExperimentalMakers, febuary 17, 2020
-#released under General Public License v3.0.
+'''
+program for logging data from USB to given csv file
 
+created by ExperimentalMakers, febuary 17, 2020
+released under General Public License v3.0.
+'''
 
 from datetime import timedelta
 from datetime import datetime
@@ -14,7 +15,7 @@ import time
 
 
 
-def start_log(serial_port, log_file, fr_state=True, baudrate=115200):
+def start_log(serial_port, log_file, baudrate=115200, fr_state=True, silent=False, header="temp"):
 #start logging into specified file
 
 
@@ -50,7 +51,7 @@ def start_log(serial_port, log_file, fr_state=True, baudrate=115200):
 				if first_row:
 					row_string = ';'
 					for i in range(len(data.split(';'))-1):
-						row_string += "temp" + str(i+1) + ';'
+						row_string += header + str(i+1) + ';'
 
 					lf.write(row_string + '\n')
 					first_row = False					
@@ -73,14 +74,13 @@ def start_log(serial_port, log_file, fr_state=True, baudrate=115200):
 					print_str += temp.ljust(12)
 					print_str += '| '
 
-				#print data into console in human readable format
-				print str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + "  | " + print_str
+				if not silent:
+					#print data into console in human readable format
+					print str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + "  | " + print_str
 
 				#print data into csv, separated by semicolon
 				lf.write(str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + ";" + data.replace('.', ','))
 #==================================================================================================================================
-
-
 
 def getArguments():
 #get arguments from console
@@ -90,16 +90,34 @@ def getArguments():
 	#list all given arguments
 	for arg_num in range(len(argv)):
 		if argv[arg_num] == '-p':
-			port = argv[arg_num+1]
+			try:
+				port = argv[arg_num+1]
+			except:
+				return False
 
 		elif argv[arg_num] == '-f':
-			file = argv[arg_num+1]
+			try:
+				file = argv[arg_num+1]
+			except:
+				return False
 
 		elif argv[arg_num] == '-b':
-			baud = argv[arg_num+1]
+			try:
+				baud = argv[arg_num+1]
+			except:
+				return False
+
+		elif argv[arg_num] == '-h':
+			try:
+				header = argv[arg_num+1]
+			except:
+				return False
 
 		elif argv[arg_num] == '-nh':
 			noheader = False
+
+		elif argv[arg_num] == '-s':
+			silent = True
 
 		elif argv[arg_num] == 'help':
 			return False	
@@ -126,9 +144,21 @@ def getArguments():
 	except:
 		parameters += [True]
 
+	try:
+		parameters += [silent]
+	except:
+		parameters += [False]
+
+	try:
+		parameters += [header]
+	except:
+		parameters += ["temp"]
+	
+
 
 	return parameters
 #==================================================================================================================================
+
 
 
 
@@ -137,18 +167,23 @@ def getArguments():
 
 #if given arguments is valid, then run logging
 if getArguments():
-	start_log(getArguments()[0], getArguments()[1], getArguments()[2], getArguments()[3])
+	start_log(getArguments()[0], getArguments()[1], getArguments()[2], getArguments()[3], getArguments()[4], getArguments()[5])
 
 #help message
 else:
-	print "usage:"
-	print "$python log-data.py -p [port] -f [csv file]"
+	print "Usage: log-data -p [port] -f [csv file]"
+	print "Log data from USB and save it into csv file."
+	print "Version 1.0"
 	print ""
-	print "[options]"
 	print " -p   port"
 	print " -f   csv file to log into"
-	print " -b   baudrate"
-	print " -nh  no header in csv file"
+	print " -b   baudrate (optional)"
+	print " -h   header for csv (optional)"
+	print " -nh  no header in csv file (optional)"
+	print " -s   silent, no data output in console (optional)"
+	print ""
+	print "Accepted incomming data from USB is: data;data;data;"
+	print ""
 
 #end of main section
 #=======================
