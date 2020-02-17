@@ -1,10 +1,11 @@
 #!/usr/bin/python
 
 '''
-program for logging data from USB to given csv file
+Program for logging incoming data from USB to given csv file.
+Version 1.0
 
-created by ExperimentalMakers, febuary 17, 2020
-released under General Public License v3.0.
+Created by ExperimentalMakers, febuary 17, 2020
+Released under General Public License v3.0.
 '''
 
 from datetime import timedelta
@@ -119,7 +120,7 @@ def getArguments():
 		elif argv[arg_num] == '-s':
 			silent = True
 
-		elif argv[arg_num] == 'help':
+		elif argv[arg_num] == '--help':
 			return False	
 
 
@@ -182,7 +183,7 @@ else:
 	print " -nh  no header in csv file (optional)"
 	print " -s   silent, no data output in console (optional)"
 	print ""
-	print "Accepted incomming data from USB is: data;data;data;"
+	print "Accepted incoming data from USB is: data;data;data;"
 	print ""
 
 #end of main section
