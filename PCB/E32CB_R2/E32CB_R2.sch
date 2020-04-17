@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:E32CB_R2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -106,7 +107,7 @@ Wire Wire Line
 Text Label 4800 3150 2    50   ~ 0
 EN
 Text Label 6300 3150 0    50   ~ 0
-Boot
+IO_0
 $Comp
 L power:+3.3V #PWR029
 U 1 1 5DF14F2C
@@ -1021,7 +1022,7 @@ RXD
 Text Label 3800 1800 0    50   ~ 0
 EN
 Text Label 3800 2700 0    50   ~ 0
-Boot
+IO_0
 $Comp
 L power:+3.3V #PWR023
 U 1 1 5E0DC59F
