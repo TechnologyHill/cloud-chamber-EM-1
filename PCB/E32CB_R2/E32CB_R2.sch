@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:E32CB_R2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -90,17 +89,6 @@ F 2 "" H 2500 1250 50  0001 C CNN
 F 3 "" H 2500 1250 50  0001 C CNN
 	1    2500 1250
 	0    1    1    0   
-$EndComp
-$Comp
-L E32CB_R2-rescue:ESP32-WROOM-32-RF_Module U1
-U 1 1 5DA32DFA
-P 5550 4350
-F 0 "U1" H 5550 5931 50  0001 C CNN
-F 1 "ESP32-WROOM-32" V 5550 4350 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5550 2850 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5250 4400 50  0001 C CNN
-	1    5550 4350
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR027
@@ -2382,4 +2370,15 @@ Wire Notes Line
 	750  6450 750  5350
 Text Notes 750  5350 0    50   ~ 10
 GPIO HEADER
+$Comp
+L RF_Module:ESP32-WROOM-32 U1
+U 1 1 5E9AC344
+P 5550 4350
+F 0 "U1" V 5550 5928 50  0001 C CNN
+F 1 "ESP32-WROOM-32" V 5550 4150 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 5550 2850 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 5250 4400 50  0001 C CNN
+	1    5550 4350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
