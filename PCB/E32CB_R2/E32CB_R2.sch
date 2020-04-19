@@ -2343,13 +2343,13 @@ Wire Wire Line
 	1150 5950 1300 5950
 Wire Wire Line
 	1150 6050 1300 6050
-Text Label 1300 6150 0    50   ~ 0
-gpio2
 Text Label 1300 6250 0    50   ~ 0
+gpio2
+Text Label 1300 6350 0    50   ~ 0
 gpio5
 Text Label 1300 5550 0    50   ~ 0
 gpio12
-Text Label 1300 6350 0    50   ~ 0
+Text Label 1300 6150 0    50   ~ 0
 gpio15
 Text Label 1300 5650 0    50   ~ 0
 gpio26
