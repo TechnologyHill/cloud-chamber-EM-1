@@ -2326,6 +2326,12 @@ F 3 "" H 900 6350 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
+	1150 6150 1300 6150
+Wire Wire Line
+	1150 6250 1300 6250
+Wire Wire Line
+	1150 6350 1300 6350
+Wire Wire Line
 	1150 5550 1300 5550
 Wire Wire Line
 	1150 5650 1300 5650
@@ -2337,29 +2343,23 @@ Wire Wire Line
 	1150 5950 1300 5950
 Wire Wire Line
 	1150 6050 1300 6050
-Wire Wire Line
-	1150 6150 1300 6150
-Wire Wire Line
-	1150 6250 1300 6250
-Wire Wire Line
-	1150 6350 1300 6350
-Text Label 1300 5550 0    50   ~ 0
-gpio2
-Text Label 1300 5650 0    50   ~ 0
-gpio5
-Text Label 1300 5850 0    50   ~ 0
-gpio12
-Text Label 1300 5750 0    50   ~ 0
-gpio15
-Text Label 1300 5950 0    50   ~ 0
-gpio26
 Text Label 1300 6150 0    50   ~ 0
-gpi34
-Text Label 1300 6050 0    50   ~ 0
-gpi35
-Text Label 1300 6350 0    50   ~ 0
-gpi36
+gpio2
 Text Label 1300 6250 0    50   ~ 0
+gpio5
+Text Label 1300 5550 0    50   ~ 0
+gpio12
+Text Label 1300 6350 0    50   ~ 0
+gpio15
+Text Label 1300 5650 0    50   ~ 0
+gpio26
+Text Label 1300 5850 0    50   ~ 0
+gpi34
+Text Label 1300 5750 0    50   ~ 0
+gpi35
+Text Label 1300 6050 0    50   ~ 0
+gpi36
+Text Label 1300 5950 0    50   ~ 0
 gpi39
 Wire Notes Line
 	750  5350 1600 5350
