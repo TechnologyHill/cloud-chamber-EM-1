@@ -1661,17 +1661,6 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRF8308M Q1
-U 1 1 5F11909A
-P 7250 4400
-F 0 "Q1" H 7455 4446 50  0000 L CNN
-F 1 "IRLR8743" H 7455 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7250 4400 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 7250 4400 50  0001 L CNN
-	1    7250 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 5F11965C
 P 7550 4100
@@ -1756,17 +1745,6 @@ Wire Wire Line
 	6550 4650 6400 4650
 Text Label 6400 4650 0    50   ~ 0
 Q1
-$Comp
-L Transistor_FET:IRF8308M Q2
-U 1 1 5F1AFF18
-P 7250 5650
-F 0 "Q2" H 7455 5696 50  0000 L CNN
-F 1 "IRLR8743" H 7455 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 7250 5650 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 7250 5650 50  0001 L CNN
-	1    7250 5650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J9
 U 1 1 5F1AFF1F
@@ -1863,17 +1841,6 @@ Wire Notes Line
 Text Notes 6350 3850 0    62   ~ 12
 Q1, Q2
 $Comp
-L Transistor_FET:IRF8308M Q3
-U 1 1 5F1E514A
-P 8850 4400
-F 0 "Q3" H 9055 4446 50  0000 L CNN
-F 1 "IRLR8743" H 9055 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 8850 4400 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 8850 4400 50  0001 L CNN
-	1    8850 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J11
 U 1 1 5F1E5151
 P 9150 4100
@@ -1958,17 +1925,6 @@ Wire Wire Line
 	8150 4650 8000 4650
 Text Label 8000 4650 0    50   ~ 0
 Q3
-$Comp
-L Transistor_FET:IRF8308M Q4
-U 1 1 5F1E5181
-P 8850 5650
-F 0 "Q4" H 9055 5696 50  0000 L CNN
-F 1 "IRLR8743" H 9055 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 8850 5650 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 8850 5650 50  0001 L CNN
-	1    8850 5650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J13
 U 1 1 5F1E5188
@@ -2065,17 +2021,6 @@ Wire Notes Line
 Text Notes 7950 3850 0    62   ~ 12
 Q3, Q4
 $Comp
-L Transistor_FET:IRF8308M Q5
-U 1 1 5F1F3ABF
-P 10450 4400
-F 0 "Q5" H 10655 4446 50  0000 L CNN
-F 1 "IRLR8743" H 10655 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 10450 4400 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 10450 4400 50  0001 L CNN
-	1    10450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J19
 U 1 1 5F1F3AC6
 P 10750 4100
@@ -2160,17 +2105,6 @@ Wire Wire Line
 	9750 4650 9600 4650
 Text Label 9600 4650 0    50   ~ 0
 Q5
-$Comp
-L Transistor_FET:IRF8308M Q6
-U 1 1 5F1F3AF6
-P 10450 5650
-F 0 "Q6" H 10655 5696 50  0000 L CNN
-F 1 "IRLR8743" H 10655 5605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 10450 5650 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 10450 5650 50  0001 L CNN
-	1    10450 5650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J21
 U 1 1 5F1F3AFD
@@ -2267,17 +2201,6 @@ Wire Notes Line
 Text Notes 9550 3850 0    62   ~ 12
 Q5, Q6
 $Comp
-L Transistor_FET:IRF8308M Q7
-U 1 1 5F203D23
-P 10450 1700
-F 0 "Q7" H 10655 1746 50  0000 L CNN
-F 1 "IRLR8743" H 10655 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 10450 1700 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 10450 1700 50  0001 L CNN
-	1    10450 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J15
 U 1 1 5F203D2A
 P 10750 1400
@@ -2362,17 +2285,6 @@ Wire Wire Line
 	9750 1950 9600 1950
 Text Label 9600 1950 0    50   ~ 0
 Q7
-$Comp
-L Transistor_FET:IRF8308M Q8
-U 1 1 5F203D5A
-P 10450 2950
-F 0 "Q8" H 10655 2996 50  0000 L CNN
-F 1 "IRLR8743" H 10655 2905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 10450 2950 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/irf8308mpbf.pdf?fileId=5546d462533600a40153560d319d1d61" H 10450 2950 50  0001 L CNN
-	1    10450 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J17
 U 1 1 5F203D61
@@ -2529,4 +2441,92 @@ Wire Notes Line
 	2650 6200 2650 5350
 Text Notes 2650 5350 0    50   ~ 10
 SERIAL FLASH
+$Comp
+L Transistor_FET:IRF740 Q1
+U 1 1 5F1B032E
+P 7250 4400
+F 0 "Q1" H 7455 4446 50  0000 L CNN
+F 1 "IRLR8743" H 7455 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 4325 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 7250 4400 50  0001 L CNN
+	1    7250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q2
+U 1 1 5F1FBA2A
+P 7250 5650
+F 0 "Q2" H 7455 5696 50  0000 L CNN
+F 1 "IRLR8743" H 7455 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 5575 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 7250 5650 50  0001 L CNN
+	1    7250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q4
+U 1 1 5F1FBB5C
+P 8850 5650
+F 0 "Q4" H 9055 5696 50  0000 L CNN
+F 1 "IRLR8743" H 9055 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9100 5575 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 8850 5650 50  0001 L CNN
+	1    8850 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q3
+U 1 1 5F1FBC2E
+P 8850 4400
+F 0 "Q3" H 9055 4446 50  0000 L CNN
+F 1 "IRLR8743" H 9055 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 9100 4325 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 8850 4400 50  0001 L CNN
+	1    8850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q7
+U 1 1 5F1FBD74
+P 10450 1700
+F 0 "Q7" H 10655 1746 50  0000 L CNN
+F 1 "IRLR8743" H 10655 1655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10700 1625 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 10450 1700 50  0001 L CNN
+	1    10450 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q8
+U 1 1 5F1FBE36
+P 10450 2950
+F 0 "Q8" H 10655 2996 50  0000 L CNN
+F 1 "IRLR8743" H 10655 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10700 2875 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 10450 2950 50  0001 L CNN
+	1    10450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q6
+U 1 1 5F1FBEFE
+P 10450 5650
+F 0 "Q6" H 10655 5696 50  0000 L CNN
+F 1 "IRLR8743" H 10655 5605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10700 5575 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 10450 5650 50  0001 L CNN
+	1    10450 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF740 Q5
+U 1 1 5F1FBFFC
+P 10450 4400
+F 0 "Q5" H 10655 4446 50  0000 L CNN
+F 1 "IRLR8743" H 10655 4355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 10700 4325 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 10450 4400 50  0001 L CNN
+	1    10450 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
