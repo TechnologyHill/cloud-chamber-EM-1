@@ -2,7 +2,7 @@
 
 '''
 Program for logging incoming data from USB to given csv file.
-Version 1.0
+Version 1.1
 
 Created by ExperimentalMakers, febuary 17, 2020
 Released under General Public License v3.0.
