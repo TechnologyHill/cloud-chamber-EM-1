@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 '''
 Program for logging incoming data from USB to given csv file.
@@ -35,7 +35,7 @@ def start_log(serial_port, log_file, baudrate=115200, fr_state=True, silent=Fals
 	start_time = datetime.now()
 
 
-	print "start logging data into " + log_file + "\n"
+	print("start logging data into " + log_file + "\n")
 
 
 	while True:
@@ -77,7 +77,7 @@ def start_log(serial_port, log_file, baudrate=115200, fr_state=True, silent=Fals
 
 				if not silent:
 					#print data into console in human readable format
-					print str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + "  | " + print_str
+					print(str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + "  | " + print_str)
 
 				#print data into csv, separated by semicolon
 				lf.write(str("%02d"%hours) + ":" + str("%02d"%minutes) + ":" + str("%02d"%seconds) + ";" + data.replace('.', ','))
@@ -172,19 +172,19 @@ if getArguments():
 
 #help message
 else:
-	print "Usage: log-data -p [port] -f [csv file]"
-	print "Log data from USB and save it into csv file."
-	print "Version 1.0"
-	print ""
-	print " -p   port"
-	print " -f   csv file to log into"
-	print " -b   baudrate (optional)"
-	print " -h   header for csv (optional)"
-	print " -nh  no header in csv file (optional)"
-	print " -s   silent, no data output in console (optional)"
-	print ""
-	print "Accepted incoming data from USB is: data;data;data;"
-	print ""
+	print("Usage: log-data -p [port] -f [csv file]")
+	print("Log data from USB and save it into csv file.")
+	print("Version 1.0")
+	print("")
+	print(" -p   port")
+	print(" -f   csv file to log into")
+	print(" -b   baudrate (optional)")
+	print(" -h   header for csv (optional)")
+	print(" -nh  no header in csv file (optional)")
+	print(" -s   silent, no data output in console (optional)")
+	print("")
+	print("Accepted incoming data from USB is: data;data;data;")
+	print("")
 
 #end of main section
 #=======================

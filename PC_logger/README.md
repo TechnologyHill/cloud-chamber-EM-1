@@ -8,11 +8,11 @@
 **usage:**
 
 ```
-python log-data.py -p /dev/ttyUSB0 -f log_file.csv
+python3 log-data.py -p /dev/ttyUSB0 -f log_file.csv
 ```
 
 **more information**
 
 ```
-python log-data.py --help
+python3 log-data.py --help
 ```
