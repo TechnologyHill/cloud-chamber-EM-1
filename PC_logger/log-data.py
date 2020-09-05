@@ -174,7 +174,7 @@ if getArguments():
 else:
 	print("Usage: log-data -p [port] -f [csv file]")
 	print("Log data from USB and save it into csv file.")
-	print("Version 1.0")
+	print("Version 1.1")
 	print("")
 	print(" -p   port")
 	print(" -f   csv file to log into")

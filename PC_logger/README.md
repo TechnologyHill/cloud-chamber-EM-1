@@ -1,7 +1,7 @@
 # log-data
 
 ## Program for logging incoming data from USB to given csv file.
-**Version 1.0**
+**Version 1.1**
 
 ---
 
